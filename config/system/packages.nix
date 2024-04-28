@@ -16,7 +16,6 @@
   ];
 
   programs = {
-    steam.gamescopeSession.enable = true;
     dconf.enable = true;
     seahorse.enable=true;
     hyprland = {

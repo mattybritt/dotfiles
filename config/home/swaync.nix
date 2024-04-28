@@ -91,10 +91,6 @@ in {
                         "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
                     },
                     {
-                        "label": "🎮",
-                        "command": "steam"
-                    },
-                    {
                         "label": "🌏",
                         "command": "firefox"
                     },
