@@ -19,7 +19,8 @@ in with lib; {
       # hyprplugins.hyprtrails
     ];
     extraConfig = let
-      modifier = "SUPER";
+      modifier = "MOD1";
+      modifier_2 = "MOD2";
     in concatStrings [ ''
       monitor=,preferred,auto,1
       ${extraMonitorSettings}
@@ -140,7 +141,7 @@ in with lib; {
       bind = ${modifier}SHIFT,G,exec,godot4
       bind = ${modifier},T,exec,thunar
       bind = ${modifier},M,exec,spotify
-      bind = ${modifier},Q,killactive,
+      bind = ${modifier_2},Q,killactive,
       bind = ${modifier},P,pseudo,
       bind = ${modifier}SHIFT,I,togglesplit,
       bind = ${modifier},F,fullscreen,
