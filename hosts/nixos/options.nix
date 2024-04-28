@@ -18,8 +18,8 @@ in {
   flakeBackup = "/home/${setUsername}/.zaneyos-backup";
 
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "John Smith";
-  gitEmail = "johnsmith@gmail.com";
+  gitUsername = "Matt Britt";
+  gitEmail = "mattybritt@gmail.com";
 
   # Base16 Theme
   theme = "atelier-cave";
@@ -38,8 +38,8 @@ in {
   theKBDLayout = "us";
   theSecondKBDLayout = "de";
   theKBDVariant = "";
-  theLCVariables = "en_US.UTF-8";
-  theTimezone = "America/Chicago";
+  theLCVariables = "en_ZA.UTF-8";
+  theTimezone = "Africa/Johannesburg";
   theShell = "bash"; # Possible options: bash, zsh
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
