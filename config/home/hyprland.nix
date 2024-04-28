@@ -20,7 +20,7 @@ in with lib; {
     ];
     extraConfig = let
       modifier = "MOD1";
-      modifier_2 = "MOD2";
+      modifier_2 = "MOD4";
     in concatStrings [ ''
       monitor=,preferred,auto,1
       ${extraMonitorSettings}
