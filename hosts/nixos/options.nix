@@ -26,7 +26,10 @@ in {
 
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
-  extraMonitorSettings = "";
+  extraMonitorSettings = "
+    monitor=DP-1,2560x1440@60,0x0,1
+    monitor=HDMI-A-1,2560x1440@60,2560x0,1
+  ";
 
   # Waybar Settings
   waybarAnim = true; # Enable / Disable Waybar Animation CSS
