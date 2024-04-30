@@ -133,7 +133,7 @@ in with lib; {
       '' else ''
 	bind = ${modifier},W,exec,${browser}
       ''}
-      bind = ${modifier},E,exec,emopicker9000
+      bind = ${modifier_2},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
@@ -141,7 +141,7 @@ in with lib; {
       bind = ${modifier},M,exec,spotify
       bind = ${modifier_2},Q,killactive,
       bind = ${modifier},P,pseudo,
-      bind = ${modifier}SHIFT,I,togglesplit,
+      bind = ${modifier_2}SHIFT,I,togglesplit,
       bind = ${modifier},F,fullscreen,
       bind = ${modifier}SHIFT,F,togglefloating,
       bind = ${modifier}SHIFT,C,exit,
