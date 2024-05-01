@@ -18,6 +18,7 @@ lib.mkIf (theShell == "zsh") {
       if type nproc &>/dev/null; then
         export MAKEFLAGS="$MAKEFLAGS -j$(($(nproc)-1))"
       fi
+      bindkey -v                                      # Vi Mode
       bindkey '^[[3~' delete-char                     # Key Del
       bindkey '^[[5~' beginning-of-buffer-or-history  # Key Page Up
       bindkey '^[[6~' end-of-buffer-or-history        # Key Page Down
