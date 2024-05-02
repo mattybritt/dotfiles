@@ -25,5 +25,6 @@
     ./services.nix
     ./syncthing.nix
     ./vm.nix
+    ./rust.nix
   ];
 }
