@@ -5,9 +5,12 @@
   home.file.".emoji".source = ./files/emoji;
   home.file.".tmux.conf".source = ./files/tmux/.tmux.conf;
   home.file.".base16-themes".source = ./files/base16-themes;
-  home.file.".config/rofi/rofi.jpg".source = ./files/rofi.jpg;
   home.file.".config/starship.toml".source = ./files/starship.toml;
   home.file.".config/ascii-neofetch".source = ./files/ascii-neofetch;
+  home.file.".config/nvim" = {
+    source = ./files/nvim;
+    recursive = true;
+  }; 
   home.file.".local/share/fonts" = {
     source = ./files/fonts;
     recursive = true;
