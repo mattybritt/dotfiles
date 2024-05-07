@@ -13,10 +13,9 @@ lib.mkIf (theShell == "bash") {
       #fi
     '';
     initExtra = ''
-      if [ -f $HOME/.bashrc-personal ]; then
-        source $HOME/.bashrc-personal
-      fi
       export PATH=$PATH:/home/matt/.scripts
+
+      . ~/.bash_aliases
     '';
     sessionVariables = {
       ZANEYOS = true;

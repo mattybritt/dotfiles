@@ -5,6 +5,7 @@
   home.file.".emoji".source = ./files/emoji;
   home.file.".tmux.conf".source = ./files/tmux/.tmux.conf;
   home.file.".base16-themes".source = ./files/base16-themes;
+  home.file.".bash_aliases".source = ./files/.bash_aliases;
   home.file.".config/starship.toml".source = ./files/starship.toml;
   home.file.".config/ascii-neofetch".source = ./files/ascii-neofetch;
   home.file.".scripts" = {
