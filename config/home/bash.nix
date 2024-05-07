@@ -1,6 +1,6 @@
 { config, lib, pkgs, host, ... }:
 
-let inherit (import ../../hosts/${host}/options.nix) flakeDir flakePrev 
+let inherit (import ../../hosts/${host}/options.nix) flakeDir flakePrev
 	     hostname flakeBackup theShell; in
 lib.mkIf (theShell == "bash") {
   # Configure Bash
@@ -16,6 +16,7 @@ lib.mkIf (theShell == "bash") {
       if [ -f $HOME/.bashrc-personal ]; then
         source $HOME/.bashrc-personal
       fi
+      export PATH=$PATH:/home/matt/.scripts
     '';
     sessionVariables = {
       ZANEYOS = true;

@@ -20,7 +20,6 @@
     ./swaync.nix
     ./wezterm.nix
     ./zeroad.nix
-    ./zsh.nix
 
     # Place Home Files Like Pictures
     ./files.nix

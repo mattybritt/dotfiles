@@ -1,7 +1,7 @@
 { pkgs, config, username, host, ... }:
 
-let 
-  inherit (import ../../hosts/${host}/options.nix) 
+let
+  inherit (import ../../hosts/${host}/options.nix)
     browser wallpaperDir wallpaperGit flakeDir;
 in {
   # Install Packages For The User
@@ -9,7 +9,8 @@ in {
     pkgs."${browser}" discord libvirt swww grim slurp gnome.file-roller
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp obs-studio rustup audacity pavucontrol tree protonup-qt
-    font-awesome spotify swayidle neovide vscode tmux
+    font-awesome spotify swayidle neovide vscode tmux brave azuredatastudio
+    bitwarden speedtest-cli
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })
