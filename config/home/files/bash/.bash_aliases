@@ -9,17 +9,18 @@ alias vi=vim
 alias vim=nvim
 alias g=git
 alias ..="cd .."
-alias lsa="ls -la"
 
 bind -x '"\C-f":"tmux-sessionizer"'
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -alFh'
-alias l='ls'
-alias l.="ls -A | egrep '^\.'"
-alias listdir="ls -d */ > list"
+alias lsa="exa -la"
+alias ls='exa'
+alias ls='exa --color=auto'
+alias la='exa -a'
+alias ll='exa -alFh'
+alias l='exa'
+alias l.="exa -A | egrep '^\.'"
+alias listdir="exa -d */ > list"
 
 #fix obvious typo's
 alias cd..='cd ..'

@@ -8,11 +8,11 @@
   environment.systemPackages = with pkgs; [
     wget curl git cmatrix lolcat neofetch htop btop libvirt
     polkit_gnome lm_sensors unzip unrar libnotify eza
-    v4l-utils ydotool wl-clipboard socat cowsay lsd lshw
+    v4l-utils ydotool wl-clipboard socat cowsay lshw
     pkg-config meson hugo gnumake ninja go nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl
     toybox virt-viewer swappy ripgrep appimage-run
-    networkmanagerapplet yad playerctl nh fzf bash
+    networkmanagerapplet yad playerctl nh fzf bash bat just eza
   ];
 
   programs = {
