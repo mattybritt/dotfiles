@@ -4,7 +4,7 @@
   imports = [
     # Enable &/ Configure Programs
     ./alacritty.nix
-    ./bash.nix
+    # ./bash.nix
     ./gtk-qt.nix
     ./hyprland.nix
     ./kdenlive.nix

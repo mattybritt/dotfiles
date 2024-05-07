@@ -8,7 +8,6 @@
   home.file.".bash_aliases".source = ./files/bash/.bash_aliases;
   home.file.".bashrc".source = ./files/bash/.bashrc;
   home.file.".config/starship.toml".source = ./files/starship.toml;
-  home.file.".config/ascii-neofetch".source = ./files/ascii-neofetch;
   home.file.".scripts" = {
     source = ./files/scripts;
     recursive = true;
