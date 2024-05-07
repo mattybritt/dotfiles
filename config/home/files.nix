@@ -7,6 +7,7 @@
   home.file.".base16-themes".source = ./files/base16-themes;
   home.file.".bash_aliases".source = ./files/bash/.bash_aliases;
   home.file.".bashrc".source = ./files/bash/.bashrc;
+  home.file.".inputrc".source = ./files/bash/.inputrc;
   home.file.".config/starship.toml".source = ./files/starship.toml;
   home.file.".scripts" = {
     source = ./files/scripts;
