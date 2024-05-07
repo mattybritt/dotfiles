@@ -1,16 +1,6 @@
-export GO111MODULE=on
-export LANG="en_US.UTF-8"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export PATH="/home/matt/scripts:$PATH"
-export PATH=$PATH:/snap/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/mattb/.local/bin
-export PATH=$PATH:/home/matt/bin
-export PATH=$PATH:/usr/sbin
-export PATH=$PATH:~/go/bin
-
-export GOBIN=~/go/bin
 
 #autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
