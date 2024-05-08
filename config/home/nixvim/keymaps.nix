@@ -28,11 +28,6 @@
         }
 
         {
-          key = "<leader>w";
-          action = "<CMD>WhichKey<NL>";
-        }
-
-        {
           key = "<Tab>";
           action = "<CMD>:bnext<NL>";
         }

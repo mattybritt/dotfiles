@@ -2,20 +2,21 @@
 
 {
   imports = [
+    ./lsp.nix
+    ./conform.nix
+    ./bufferline.nix
+    ./nvim-tree.nix
+
+    #todo below
+
     ./keymaps.nix
     ./nvim-cmp.nix
-    ./lsp.nix
-    ./bufferline.nix
     ./telescope.nix
-    ./neo-tree.nix
     ./prettier.nix
     ./lsp-servers.nix
     ./treesitter.nix
-    ./autopairs.nix
-    ./whichkey.nix
     ./dashboard.nix
     ./lsp-format.nix
-    ./conform.nix
   ];
   programs = {
     nixvim = {
