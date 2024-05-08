@@ -52,9 +52,9 @@
         nvim-colorizer.enable = true; #hex colours
         luasnip.enable = true; #snippets
         rust-tools.enable = true; # rust tooling
-        lualine.enable = true;
-        copilot-vim.enable = true;
-        undotree.enable = true;
+        lualine.enable = true; #footer line
+        copilot-vim.enable = true; #copilot support for vim
+        undotree.enable = true; #undo kak
 
         # maybe
         # harpoon.enable = true;
