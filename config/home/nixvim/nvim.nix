@@ -57,14 +57,6 @@
         rust-tools.enable = true; # rust tooling
       };
 
-      #autoCmd = [
-      #  {
-      #    event = [ "BufWrite" ];
-      #    pattern = [ "" ];
-      #    command = "lua require('conform').format({ lsp_fallback = true, async = false, timeout_ms = 500 })<CR>";
-      #  }
-      #];
-
       extraPlugins = with pkgs.vimPlugins; [
       ];
 
