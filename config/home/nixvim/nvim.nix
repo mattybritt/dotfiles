@@ -59,8 +59,11 @@
       };
 
       colorschemes.gruvbox = {
-       enable = true;
+        enable = true;
       };
+
+      extraConfigLua = ''vim.cmd('hi Normal guibg=NONE ctermbg=NONE')'';
+     
     };
   };
 }
