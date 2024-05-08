@@ -87,10 +87,9 @@
         "end";
 
 
-      #colorschemes.kanagawa = {
-      #  enable = true;
-      #  terminalColors = true;
-      #};
+      colorschemes.gruvbox = {
+       enable = true;
+      };
 
       #colorschemes.ayu = {
       #  enable = true;
