@@ -46,17 +46,15 @@
       };
 
       plugins = {
-        nix.enable = true;
-
-        lsp-lines.enable = true;
-        lspkind.enable = true;
-
-        neogit.enable = true;
-        cmp-zsh.enable = true;
-        # noice.enable = true;
-        nvim-colorizer.enable = true;
-        luasnip.enable = true;
-        rust-tools.enable = true;
+        nix.enable = true; # support nix expressions
+        lsp-lines = { #lsp prompt lines
+          enable = true;
+        };
+        lspkind.enable = true; #Pictograms to neovim built-in lsp
+        neogit.enable = true; #Magit inspired git
+        nvim-colorizer.enable = true; #hex colours
+        luasnip.enable = true; #snippets
+        rust-tools.enable = true; # rust tooling
       };
 
       #autoCmd = [
@@ -86,7 +84,6 @@
       colorschemes.gruvbox = {
        enable = true;
       };
-
     };
   };
 }
