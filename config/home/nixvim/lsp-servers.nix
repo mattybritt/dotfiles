@@ -14,7 +14,6 @@
         lsp.servers.rust-analyzer.installRustc = true;
         lsp.servers.tsserver.enable = false;
         lsp.servers.yamlls.enable = true;
-        lsp.servers.efm.enable = true;
       };
     };
   };

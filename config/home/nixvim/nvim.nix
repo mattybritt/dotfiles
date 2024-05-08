@@ -6,17 +6,14 @@
     ./conform.nix
     ./bufferline.nix
     ./nvim-tree.nix
-
-    #todo below
-
-    ./keymaps.nix
-    ./nvim-cmp.nix
     ./telescope.nix
     ./prettier.nix
     ./lsp-servers.nix
     ./treesitter.nix
-    ./dashboard.nix
-    ./lsp-format.nix
+
+    #todo below
+    ./keymaps.nix
+    ./nvim-cmp.nix
   ];
   programs = {
     nixvim = {
@@ -55,6 +52,10 @@
         nvim-colorizer.enable = true; #hex colours
         luasnip.enable = true; #snippets
         rust-tools.enable = true; # rust tooling
+        lualine.enable = true;
+
+        # maybe
+        # nvim-web-devicons
       };
 
       extraPlugins = with pkgs.vimPlugins; [
