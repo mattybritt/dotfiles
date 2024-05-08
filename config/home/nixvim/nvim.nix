@@ -19,7 +19,7 @@
       globals.mapleader = " ";
       clipboard.providers.wl-copy.enable = true;
 
-      options = {
+      opts = {
         number = true;
         relativenumber = true;
         shiftwidth = 2;
