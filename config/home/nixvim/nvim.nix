@@ -26,9 +26,25 @@
 
       options = {
         number = true;
-        relativenumber = false;
+        relativenumber = true;
         shiftwidth = 2;
+        tabstop = 4;
+        softtabstop = 4;
+        expandtab = true;
+        smartindent = true;
+        wrap = false;
+        swapfile = false;
+        backup = false;
+        undofile = true;
+        hlsearch = false;
+        incsearch = true;
+        termguicolors = true;
+        scrolloff = 8;
+        signcolumn = "yes";
+        updatetime = 50;
+        colorcolumn = "80";
       };
+
       plugins = {
         nix.enable = true;
 
@@ -37,26 +53,10 @@
 
         neogit.enable = true;
         cmp-zsh.enable = true;
-        noice.enable = true;
+        # noice.enable = true;
         nvim-colorizer.enable = true;
         luasnip.enable = true;
         rust-tools.enable = true;
-
-        notify = {
-          enable = true;
-          #backgroundColour = "#000000";
-          timeout = 2000;
-          fps = 120;
-          stages = "fade";
-        };
-
-        airline = {
-          enable = true;
-          #powerline = true;
-          settings = {
-            theme = "catppuccin";
-          };
-        };
       };
 
       #autoCmd = [
@@ -68,10 +68,6 @@
       #];
 
       extraPlugins = with pkgs.vimPlugins; [
-        telescope-ui-select-nvim
-        #vim-autoformat
-        vim-jsbeautify
-
       ];
 
       extraConfigLua =
@@ -90,19 +86,6 @@
       colorschemes.gruvbox = {
        enable = true;
       };
-
-      #colorschemes.ayu = {
-      #  enable = true;
-      #  mirage = true;
-      #};
-
-      # colorschemes.catppuccin = {
-      #   enable = true;
-      #   settings = {
-      #     flavour = "mocha";
-      #     transparentBackground = false;
-      #   };
-      # };
 
     };
   };
