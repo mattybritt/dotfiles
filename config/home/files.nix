@@ -13,10 +13,6 @@
     source = ./files/scripts;
     recursive = true;
   };
-  # home.file.".config/nvim" = {
-  #   source = ./files/nvim;
-  #   recursive = true;
-  # };
   home.file.".local/share/fonts" = {
     source = ./files/fonts;
     recursive = true;
