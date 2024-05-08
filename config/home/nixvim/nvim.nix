@@ -14,7 +14,6 @@
     ./autopairs.nix
     ./whichkey.nix
     ./dashboard.nix
-    ./efmls.nix
     ./lsp-format.nix
     ./conform.nix
   ];
