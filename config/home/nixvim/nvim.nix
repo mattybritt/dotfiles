@@ -53,9 +53,11 @@
         luasnip.enable = true; #snippets
         rust-tools.enable = true; # rust tooling
         lualine.enable = true;
+        copilot-vim.enable = true;
+        undotree.enable = true;
 
         # maybe
-        # nvim-web-devicons
+        # harpoon.enable = true;
       };
 
       extraPlugins = with pkgs.vimPlugins; [
