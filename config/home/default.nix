@@ -9,7 +9,7 @@
     ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
-    ./nixvim.nix
+    ./nixvim/nvim.nix
     ./packages.nix
     ./rofi.nix
     ./starship.nix
