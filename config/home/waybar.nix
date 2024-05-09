@@ -15,7 +15,7 @@ in with lib; {
 
       modules-center = [ "hyprland/workspaces" ] ;
       modules-left = [ "custom/startmenu" "hyprland/window" "pulseaudio" "cpu" "memory"];
-      modules-right = [ "custom/hyprbindings" "custom/exit" "idle_inhibitor" "custom/themeselector" "custom/notification" "battery" "clock" "tray" ];
+      modules-right = [ "custom/exit" "idle_inhibitor" "custom/notification" "clock" "tray" ];
 
       "hyprland/workspaces" = {
       	format = if bar-number == true then "{name}" else "{icon}";
@@ -80,11 +80,6 @@ in with lib; {
         };
         on-click = "sleep 0.1 && pavucontrol";
       };
-      "custom/themeselector" = {
-        tooltip = false;
-        format = "";
-        on-click = "sleep 0.1 && theme-selector";
-      };
       "custom/exit" = {
         tooltip = false;
         format = "";
@@ -95,11 +90,6 @@ in with lib; {
         format = " ";
         # exec = "rofi -show drun";
         on-click = "sleep 0.1 && rofi-launcher";
-      };
-      "custom/hyprbindings" = {
-        tooltip = false;
-        format = " Bindings";
-        on-click = "sleep 0.1 && list-hypr-bindings";
       };
       "idle_inhibitor" = {
         format = "{icon}";
@@ -127,18 +117,6 @@ in with lib; {
         exec = "swaync-client -swb";
         on-click = "sleep 0.1 && task-waybar";
         escape = true;
-      };
-      "battery" = {
-        states = {
-          warning = 30;
-          critical = 15;
-        };
-        format = "{icon} {capacity}%";
-        format-charging = "󰂄 {capacity}%";
-        format-plugged = "󱘖 {capacity}%";
-        format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
-        on-click = "";
-        tooltip = false;
       };
     }];
     style = concatStrings [''
