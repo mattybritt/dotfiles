@@ -7,6 +7,7 @@
     shellInit = /* fish */ ''
       set -U fish_greeting ""
 
+      export EDITOR='nvim'
       export PATH="/home/matt/.scripts:$PATH"
       export TERMCMD="kitty --single-instance"
       export DIRENV_LOG_FORMAT=""
@@ -23,12 +24,33 @@
 
       bind \cf 'tmux-sessionizer'
 
-      fish_default_key_bindings
+      fish_vi_key_bindings
 
       if string match -qe -- "/dev/pts/" (tty)
         alias ssh="kitty +kitten ssh"
       end
-    '';
+
+      alias v=vi
+      alias vi=vim
+      alias vim=nvim
+      alias g=git
+      alias ..="cd .."
+      alias lsa="exa -la"
+      alias ls='exa'
+      alias ls='exa --color=auto'
+      alias la='exa -a'
+      alias ll='exa -alFh'
+      alias l='exa'
+      alias l.="exa -A | egrep '^\.'"
+      alias listdir="exa -d */ > list"
+      alias cd..='cd ..'
+      alias pdw='pwd'
+      alias ssn="sudo shutdown now"
+      alias sr="reboot"
+
+      eval "$(zoxide init fish --cmd cd)"
+      '';
+      
 
     shellAliases = {
       tree = "eza --all --long --tree";
