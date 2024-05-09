@@ -46,9 +46,9 @@
   services.gvfs.enable = true;
   services.tumbler.enable = true;
   services.gnome.gnome-keyring.enable=true;
-  hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  services.blueman.enable = true;
+  hardware.bluetooth.enable = false; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = false; # powers up the default Bluetooth controller on boot
+  services.blueman.enable = false;
   security.pam.services.swaylock = {
     text = ''
       auth include login
