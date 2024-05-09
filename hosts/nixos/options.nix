@@ -65,7 +65,7 @@ in {
   localHWClock = false;
 
   # Enable Printer & Scanner Support
-  printer = true;
+  printer = false;
 
   # Program Options
   browser = "firefox"; # Install & Set Default Browser
