@@ -7,7 +7,7 @@
     shellInit = /* fish */ ''
       set -U fish_greeting ""
 
-      # export PATH="$HOME/.deno/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:$HOME/.npm-packages/bin:$HOME/.local/bin:$HOME/.go/bin:$PATH"
+      export PATH="/home/matt/.scripts:$PATH"
       export TERMCMD="kitty --single-instance"
       export DIRENV_LOG_FORMAT=""
 
@@ -20,6 +20,8 @@
       set -x -U LESS_TERMCAP_ue (printf "\e[0m")
       set -x -U LESS_TERMCAP_us (printf "\e[01;32m")
       set -x -U MANROFFOPT "-c"
+
+      bind \cf 'tmux-sessionizer'
 
       fish_default_key_bindings
 

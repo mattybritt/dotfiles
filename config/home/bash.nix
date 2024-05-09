@@ -6,7 +6,7 @@ lib.mkIf (theShell == "bash") {
   # Configure Bash
   programs.bash = {
     enable = true;
-    enableCompletion = true;
+    # enableCompletion = true;
     # initExtra = ''
     #   export PATH=$PATH:/home/matt/.scripts
     # '';
