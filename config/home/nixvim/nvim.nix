@@ -4,7 +4,6 @@
   imports = [
     ./lsp.nix
     ./conform.nix
-    ./bufferline.nix
     ./nvim-tree.nix
     ./telescope.nix
     ./prettier.nix
