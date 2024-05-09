@@ -5,6 +5,7 @@
     # Enable &/ Configure Programs
     ./nixvim/nvim.nix
     ./alacritty.nix
+    ./fish.nix
     ./gtk-qt.nix
     ./hyprland.nix
     ./kdenlive.nix
