@@ -22,7 +22,7 @@ in {
   gitEmail = "mattybritt@gmail.com";
 
   # Base16 Theme
-  theme = "gruvbox-dark-hard";
+  theme = "catppuccin-macchiato";
 
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
