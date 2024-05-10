@@ -58,7 +58,11 @@
         enable = true;
       };
 
-      extraConfigLua = ''vim.cmd('hi Normal guibg=NONE ctermbg=NONE')'';
+      extraConfigLua = ''
+        vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+        vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
+        vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
+      '';
      
     };
   };
