@@ -1,27 +1,18 @@
-# PLEASE READ THE WIKI FOR DETERMINING
-# WHAT TO PUT HERE AS OPTIONS. 
-# https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
-
 let
   setUsername = "matt";
   setHostname = "nixos";
 in {
-  # No Change Needed Below
   username = "${setUsername}";
   hostname = "${setHostname}";
   userHome = "/home/${setUsername}";
-  flakeDir = "/home/${setUsername}/zaneyos";
-  wallpaperGit = "https://gitlab.com/Zaney/my-wallpapers.git"; # Can be changed IF you know what your doing
+  flakeDir = "/home/${setUsername}/git/github/mattybritt/dotfiles";
+  wallpaperGit = "https://github.com/mattybritt/wallpapers.git"; 
   wallpaperDir = "/home/${setUsername}/Pictures/Wallpapers";
   screenshotDir = "/home/${setUsername}/Pictures/Screenshots";
-  flakePrev = "/home/${setUsername}/.zaneyos-previous";
-  flakeBackup = "/home/${setUsername}/.zaneyos-backup";
 
-  # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Matt Britt";
   gitEmail = "mattybritt@gmail.com";
 
-  # Base16 Theme
   theme = "catppuccin-macchiato";
 
   # Hyprland Settings

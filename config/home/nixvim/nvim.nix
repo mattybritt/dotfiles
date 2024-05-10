@@ -30,7 +30,7 @@
         swapfile = false;
         backup = false;
         undofile = true;
-        hlsearch = false;
+        hlsearch = true;
         incsearch = true;
         termguicolors = true;
         scrolloff = 8;

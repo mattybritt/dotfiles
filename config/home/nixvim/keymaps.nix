@@ -59,6 +59,11 @@
         }
         {
           mode = "n"; 
+          key = "<C-c>"; 
+          action = "<CMD>:nohl<CR>"; #Clears search
+        }
+        {
+          mode = "n"; 
           key = "<C-u>"; 
           action = "<C-u>zz"; #Moves up and keeps buffer centered at cursor
         }

@@ -18,18 +18,16 @@ in
     ];
     users.${username} = {
       directories = [
-	"Downloads"
-	"Music"
-	"Documents"
-	"Pictures"
-        "Videos"
-        "zaneyos"
-	".local/share/sddm"
-	".mozilla"
-	".cache"
-	".ssh"
-	".config/discord"
-	".config/obs-studio"
+      "Downloads"
+      "Music"
+      "Documents"
+      "Pictures"
+      ".local/share/sddm"
+      ".mozilla"
+      ".cache"
+      ".ssh"
+      ".config/discord"
+      ".config/obs-studio"
       ];
       files = [
       ];
