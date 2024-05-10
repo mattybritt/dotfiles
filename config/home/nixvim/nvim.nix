@@ -10,6 +10,7 @@
     ./treesitter.nix
     ./keymaps.nix
     ./nvim-cmp.nix
+    ./harpoon.nix
   ];
   programs = {
     nixvim = {
