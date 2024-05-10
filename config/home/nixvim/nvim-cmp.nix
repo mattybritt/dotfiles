@@ -14,13 +14,10 @@
         ];
 
         settings.mapping = {
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<C-Space>" = "cmp.mapping.complete()";
-          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-          "<C-e>" = "cmp.mapping.close()";
-          "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<S-k>" = "cmp.mapping.select_prev_item(cmp_select)";
+          "<S-j>" = "cmp.mapping.select_next_item(cmp_select)";
+          "<CR>" = "cmp.mapping.confirm({ select = true })";
         };
         settings.snippet.expand = ''
         function(args)
@@ -30,16 +27,4 @@
       };
       cmp-cmdline.enable = true;
     };
-  }
-
-# TODO
-# ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-# ['<C-f>'] = cmp.mapping.scroll_docs(4),
-# ['<C-o>'] = cmp.mapping.complete(),
-# ['<C-e>'] = cmp.mapping.abort(),
-# ['<CR>'] = cmp.mapping.confirm({ select = true }),
-# ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-# ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-# ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-# ["<C-Space>"] = cmp.mapping.complete(),
-
+}
