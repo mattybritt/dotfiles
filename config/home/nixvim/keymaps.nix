@@ -13,10 +13,6 @@
           action = "<CMD>NvimTreeFindFileToggle<NL>";
         }
         {
-          key = "<Tab>";
-          action = "<CMD>:bnext<NL>"; #next buffer
-        }
-        {
           mode = "n";
           key = "<c-k>";
           action = "<CMD>:wincmd k<CR>"; #up window move
@@ -67,9 +63,34 @@
           action = "<C-u>zz"; #Moves up and keeps buffer centered at cursor
         }
         {
-          mode = ["n"  "v"]; 
+          mode = "n"; 
+          key = "Q"; 
+          action = "<nop>"; #Ignore caps Q
+        }
+        {
+          mode = "n"; 
+          key = "<leader>x"; 
+          action = "<cmd>!chmod +x %<CR>"; #Make a file executable
+        }
+        {
+          mode = ["n" "v"]; 
           key = "<leader>d"; 
-          action = "\"_d"; #Sends to void register. Use motion after commend eg "_dw "_dd
+          action = "\"_d"; #Sends to void register. Use motion after command eg "_dw "_dd
+        }
+        {
+          mode = "v"; 
+          key = "<leader>p"; 
+          action = "\"_dP"; #Paste without overriding
+        }
+        {
+          mode = ["n" "v"]; 
+          key = "<leader>y"; 
+          action = "\"+y"; #Yank selection to system clipboard. Use with motion  command eg "+yw
+        }
+        {
+          mode = "n";
+          key = "<leader>Y"; 
+          action = "\"+Y"; #Yank until end of line to system clipboard
         }
       ];
     };
@@ -77,19 +98,5 @@
 }
 
 # TODO
-#
-# -- copy to system buffer
-# vim.keymap.set("x", "<leader>y", [["_dP]])
-#
-# -- next greatest remap ever : asbjornHaland
-# vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-# vim.keymap.set("n", "<leader>Y", [["+Y]])
-#
-#
-# vim.keymap.set("i", "<C-c>", "<Esc>")
-#
-# vim.keymap.set("n", "Q", "<nop>")
-#
-# vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-# vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-#
+
+# vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) #search and replace
