@@ -52,9 +52,6 @@
         lualine.enable = true; #footer line
         copilot-vim.enable = true; #copilot support for vim
         undotree.enable = true; #undo kak
-
-        # maybe
-        # harpoon.enable = true;
       };
 
       colorschemes.catppuccin = {

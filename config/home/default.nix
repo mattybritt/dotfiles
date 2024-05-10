@@ -8,6 +8,7 @@
     ./fish.nix
     ./gtk-qt.nix
     ./hyprland.nix
+    ./harpoon.nix
     ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
