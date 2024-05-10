@@ -7,7 +7,6 @@
     ./nvim-tree.nix
     ./telescope.nix
     ./prettier.nix
-    ./lsp-servers.nix
     ./treesitter.nix
     ./keymaps.nix
     ./nvim-cmp.nix
@@ -58,11 +57,12 @@
         enable = true;
       };
 
-      extraConfigLua = ''
-        vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
-        vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
-        vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
-      '';
+      #This will set transparency
+      # extraConfigLua = ''
+      #   vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+      #   vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
+      #   vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
+      # '';
      
     };
   };
