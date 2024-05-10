@@ -47,10 +47,9 @@
       alias pdw='pwd'
       alias ssn="sudo shutdown now"
       alias sr="reboot"
-      # TODO
-      #   flake-rebuild="nh os switch --hostname nixos";
-      #   flake-update="nh os switch --hostname nixos --update";
-      #   gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
+      alias flake-rebuild="nh os switch --hostname nixos";
+      alias flake-update="nh os switch --hostname nixos --update";
+      alias gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
 
       eval "$(zoxide init fish --cmd cd)"
       '';
