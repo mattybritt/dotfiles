@@ -44,17 +44,27 @@
         {
           mode = "v";
           key = "J";
-          action = ":m '>+1<CR>gv=gv"; #tmux from vim
+          action = ":m '>+1<CR>gv=gv"; #move selected block down
         }
         {
           mode = "v";
           key = "K";
-          action = ":m '<-2<CR>gv=gv"; #tmux from vim
+          action = ":m '<-2<CR>gv=gv"; #move selected block up
         }
         {
           mode = "n";
           key = "<leader><leader>";
           action = "<CMD>so /home/matt/.config/nvim/init.lua<CR>"; #source new config
+        }
+        {
+          mode = "n"; 
+          key = "J"; 
+          action = "mzJ`z"; #appends next line to end of current (mz adds mark z, J (joins) `z goes back to mark z.
+        }
+        {
+          mode = "n"; 
+          key = "<C-u>"; 
+          action = "<C-u>zz"; #Moves up and keeps buffer centered at cursor
         }
       ];
     };
@@ -62,10 +72,7 @@
 }
 
 # TODO
-#
-# vim.keymap.set("n", "J", "mzJ`z")
-# vim.keymap.set("n", "<C-u>", "<C-u>zz")
-#
+
 # -- copy to system buffer
 # vim.keymap.set("x", "<leader>y", [["_dP]])
 #
@@ -78,9 +85,6 @@
 # vim.keymap.set("i", "<C-c>", "<Esc>")
 #
 # vim.keymap.set("n", "Q", "<nop>")
-#
-# vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-# vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 #
 # vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 # vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
