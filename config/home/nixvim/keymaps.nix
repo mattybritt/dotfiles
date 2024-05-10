@@ -80,7 +80,7 @@
         {
           mode = "v"; 
           key = "<leader>p"; 
-          action = "\"_dP"; #Paste without overriding
+          action = "\"_dP"; #Paste testing overriding
         }
         {
           mode = ["n" "v"]; 
@@ -92,11 +92,12 @@
           key = "<leader>Y"; 
           action = "\"+Y"; #Yank until end of line to system clipboard
         }
+        {
+          mode = "n";
+          key = "<leader>s"; 
+          action = ":%s/\<C-r><C-w>\/<C-r><C-w>/gI<Left><Left><Left>"; #Find and replace word under cursor
+        }
       ];
     };
   };
 }
-
-# TODO
-
-# vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) #search and replace
