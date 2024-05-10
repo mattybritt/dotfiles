@@ -41,16 +41,27 @@
           key = "<c-f>";
           action = "<CMD>silent !tmux neww tmux-sessionizer<CR>"; #tmux from vim
         }
+        {
+          mode = "v";
+          key = "J";
+          action = ":m '>+1<CR>gv=gv"; #tmux from vim
+        }
+        {
+          mode = "v";
+          key = "K";
+          action = ":m '<-2<CR>gv=gv"; #tmux from vim
+        }
+        {
+          mode = "n";
+          key = "<leader><leader>";
+          action = "<CMD>so /home/matt/.config/nvim/init.lua<CR>"; #source new config
+        }
       ];
     };
   };
 }
 
 # TODO
-#
-# --move section when in visual mode
-# vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-# vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 #
 # vim.keymap.set("n", "J", "mzJ`z")
 # vim.keymap.set("n", "<C-u>", "<C-u>zz")
