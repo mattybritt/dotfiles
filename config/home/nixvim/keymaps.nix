@@ -66,13 +66,18 @@
           key = "<C-u>"; 
           action = "<C-u>zz"; #Moves up and keeps buffer centered at cursor
         }
+        {
+          mode = ["n"  "v"]; 
+          key = "<leader>d"; 
+          action = "\"_d"; #Sends to void register. Use motion after commend eg "_dw "_dd
+        }
       ];
     };
   };
 }
 
 # TODO
-
+#
 # -- copy to system buffer
 # vim.keymap.set("x", "<leader>y", [["_dP]])
 #
@@ -80,7 +85,6 @@
 # vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 # vim.keymap.set("n", "<leader>Y", [["+Y]])
 #
-# vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 #
 # vim.keymap.set("i", "<C-c>", "<Esc>")
 #
