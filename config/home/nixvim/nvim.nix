@@ -15,6 +15,7 @@
     ./gitsigns.nix
     ./diffview.nix
     ./dap.nix
+    ./zenmode.nix
   ];
   programs = {
     nixvim = {
