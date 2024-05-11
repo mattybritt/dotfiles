@@ -14,12 +14,15 @@
     on_open = ''
       function()
         require("gitsigns.actions").toggle_current_line_blame()
-        vim.opt.relativenumber = false
+        vim.opt.relativenumber = true
         vim.opt.signcolumn = "no"
         require("gitsigns.actions").refresh()
       end
     '';
     plugins = {
+      gitsigns = {
+        enabled = false;
+      };
       options = {
         enabled = true;
         ruler = false;
@@ -29,11 +32,11 @@
         enabled = false;
       };
       twilight = {
-        enabled = false;
+        enabled = true;
       };
     };
     window = {
-      backdrop = 0.75;
+      backdrop = 1;
       height = 1;
       options = {
         signcolumn = "no";
