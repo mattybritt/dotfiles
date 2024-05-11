@@ -5,8 +5,7 @@
       signs = {
         add = { text = "+"; };
         change = { text = "~"; };
-        delete = { text = "_"; };
-        topdelete = { text = "‾"; };
+        topdelete = { text = "_"; };
         changedelete = { text = "~"; };
         untracked = { text = "┆"; };
       };
