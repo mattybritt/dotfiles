@@ -14,6 +14,7 @@
     ./neogit.nix
     ./gitsigns.nix
     ./diffview.nix
+    ./dap.nix
   ];
   programs = {
     nixvim = {
