@@ -3,22 +3,6 @@
     plugins.zen-mode = {
       enable = true;
         settings = {
-    on_close = ''
-      function()
-        require("gitsigns.actions").toggle_current_line_blame()
-        vim.opt.relativenumber = true
-        vim.opt.signcolumn = "yes:2"
-        require("gitsigns.actions").refresh()
-      end
-    '';
-    on_open = ''
-      function()
-        require("gitsigns.actions").toggle_current_line_blame()
-        vim.opt.relativenumber = true
-        vim.opt.signcolumn = "no"
-        require("gitsigns.actions").refresh()
-      end
-    '';
     plugins = {
       gitsigns = {
         enabled = false;
