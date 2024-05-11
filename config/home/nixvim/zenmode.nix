@@ -20,9 +20,6 @@
       end
     '';
     plugins = {
-      gitsigns = {
-        enabled = true;
-      };
       options = {
         enabled = true;
         ruler = false;
@@ -36,12 +33,12 @@
       };
     };
     window = {
-      backdrop = 0.95;
+      backdrop = 0.75;
       height = 1;
       options = {
         signcolumn = "no";
       };
-      width = 0.8;
+      width = 0.7;
     };
   };
       
