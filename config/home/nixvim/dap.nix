@@ -4,12 +4,7 @@
       enable = true;
     };
     keymaps = [
-         {
-          mode = "n";
-          key = "<leader>dt";
-          action = "<cmd>DapUiToggle<CR>";
-        }
-        {
+       {
           mode = "n";
           key = "<leader>db";
           action = "<cmd>DapToggleBreakpoint<CR>";
