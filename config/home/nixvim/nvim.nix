@@ -11,6 +11,7 @@
     ./keymaps.nix
     ./nvim-cmp.nix
     ./harpoon.nix
+    ./neogit.nix
   ];
   programs = {
     nixvim = {
@@ -51,12 +52,8 @@
         lualine.enable = true; #footer line
         copilot-vim.enable = true; #copilot support for vim
         undotree.enable = true; #undo kak
-
-        neogit.enable = true; #Magit inspired git
         diffview.enable = true;  #diffs daaa
         gitsigns.enable = true; #Git decorations
-        #TODO 
-        #GIT SHORTCUTS
       };
 
       colorschemes.catppuccin = {
