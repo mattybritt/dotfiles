@@ -16,6 +16,7 @@
     ./diffview.nix
     ./dap.nix
     ./zenmode.nix
+    ./twilight.nix
   ];
   programs = {
     nixvim = {
