@@ -45,13 +45,18 @@
           enable = true;
         };
         lspkind.enable = true; #Pictograms to neovim built-in lsp
-        neogit.enable = true; #Magit inspired git
         nvim-colorizer.enable = true; #hex colours
         luasnip.enable = true; #snippets
         rust-tools.enable = true; # rust tooling
         lualine.enable = true; #footer line
         copilot-vim.enable = true; #copilot support for vim
         undotree.enable = true; #undo kak
+
+        neogit.enable = true; #Magit inspired git
+        diffview.enable = true;  #diffs daaa
+        gitsigns.enable = true; #Git decorations
+        #TODO 
+        #GIT SHORTCUTS
       };
 
       colorschemes.catppuccin = {

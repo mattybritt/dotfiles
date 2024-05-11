@@ -17,7 +17,7 @@
           "<C-Space>" = "cmp.mapping.complete()";
           "<S-k>" = "cmp.mapping.select_prev_item(cmp_select)";
           "<S-j>" = "cmp.mapping.select_next_item(cmp_select)";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<C-CR>" = "cmp.mapping.confirm({ select = true })";
         };
         settings.snippet.expand = ''
         function(args)
