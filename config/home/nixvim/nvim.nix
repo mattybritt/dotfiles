@@ -58,6 +58,7 @@
         nvim-colorizer.enable = true; #hex colours
         rust-tools.enable = true; # rust tooling
         undotree.enable = true; #undo kak
+        which-key.enable = true;
       };
 
       colorschemes.catppuccin = {
