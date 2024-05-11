@@ -2,21 +2,22 @@
 
 {
   imports = [
-    ./lsp.nix
     ./conform.nix
-    ./nvim-tree.nix
-    ./telescope.nix
-    ./prettier.nix
-    ./treesitter.nix
-    ./keymaps.nix
-    ./nvim-cmp.nix
-    ./harpoon.nix
-    ./neogit.nix
-    ./gitsigns.nix
-    ./diffview.nix
     ./dap.nix
-    ./zenmode.nix
+    ./diffview.nix
+    ./gitsigns.nix
+    ./harpoon.nix
+    ./keymaps.nix
+    ./lsp.nix
+    ./neogit.nix
+    ./nvim-cmp.nix
+    ./nvim-tree.nix
+    ./prettier.nix
+    ./telescope.nix
+    ./treesitter.nix
+    ./trouble.nix
     ./twilight.nix
+    ./zenmode.nix
   ];
   programs = {
     nixvim = {
@@ -25,37 +26,37 @@
       clipboard.providers.wl-copy.enable = true;
 
       opts = {
-        number = true;
-        relativenumber = true;
-        shiftwidth = 2;
-        tabstop = 4;
-        softtabstop = 4;
-        expandtab = true;
-        smartindent = true;
-        wrap = false;
-        swapfile = false;
         backup = false;
-        undofile = true;
+        colorcolumn = "80";
+        expandtab = true;
         hlsearch = true;
         incsearch = true;
-        termguicolors = true;
+        number = true;
+        relativenumber = true;
         scrolloff = 8;
+        shiftwidth = 2;
         signcolumn = "yes";
+        smartindent = true;
+        softtabstop = 4;
+        swapfile = false;
+        tabstop = 4;
+        termguicolors = true;
+        undofile = true;
         updatetime = 50;
-        colorcolumn = "80";
+        wrap = false;
       };
 
       plugins = {
-        nix.enable = true; # support nix expressions
+        copilot-vim.enable = true; #copilot support for vim
+        lspkind.enable = true; #Pictograms to neovim built-in lsp
         lsp-lines = { #lsp prompt lines
           enable = true;
         };
-        lspkind.enable = true; #Pictograms to neovim built-in lsp
-        nvim-colorizer.enable = true; #hex colours
-        luasnip.enable = true; #snippets
-        rust-tools.enable = true; # rust tooling
         lualine.enable = true; #footer line
-        copilot-vim.enable = true; #copilot support for vim
+        luasnip.enable = true; #snippets
+        nix.enable = true; # support nix expressions
+        nvim-colorizer.enable = true; #hex colours
+        rust-tools.enable = true; # rust tooling
         undotree.enable = true; #undo kak
       };
 
