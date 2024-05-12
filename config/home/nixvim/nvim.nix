@@ -4,6 +4,7 @@
   imports = [
     ./conform.nix
     ./dap.nix
+    ./dashboard.nix
     ./diffview.nix
     ./gitsigns.nix
     ./harpoon.nix
