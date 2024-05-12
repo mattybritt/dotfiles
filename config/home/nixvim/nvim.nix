@@ -4,7 +4,7 @@
   imports = [
     ./conform.nix
     ./dap.nix
-    ./dashboard.nix
+    # ./dashboard.nix seems broken for some reason
     ./diffview.nix
     ./gitsigns.nix
     ./harpoon.nix
@@ -65,6 +65,17 @@
       colorschemes.catppuccin = {
         enable = true;
       };
+
+      #Highlight on yank
+      extraConfigLua = ''
+        local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+        vim.api.nvim_create_autocmd('TextYankPost', {
+          callback = function()
+            vim.highlight.on_yank()
+          end,
+          group = highlight_group,
+          pattern = '*',
+        })'';
 
       #This will set transparency
       # extraConfigLua = ''
