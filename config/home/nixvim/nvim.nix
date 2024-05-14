@@ -59,6 +59,8 @@
         nvim-colorizer.enable = true; #hex colours
         rust-tools.enable = true; # rust tooling
         undotree.enable = true; #undo kak
+        nvim-autopairs.enable = true; #bracket pairing
+        ts-autotag.enable = true; #autotags
         which-key.enable = true;
       };
 
