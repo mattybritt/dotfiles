@@ -1,5 +1,5 @@
 let
-  setUsername = "nixos";
+  setUsername = "matt";
   setHostname = "wsl";
 in {
   username = "${setUsername}";
