@@ -14,7 +14,7 @@
   ];
 
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  wsl.defaultUser = "matt";
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";  
 
   # This value determines the NixOS release from which the default
