@@ -13,7 +13,7 @@
         {
           mode = "n";
           key = "<leader>dt";
-          action = "<cmd>DapUiToggle<CR>";
+          action = "<cmd>lua require('dapui').toggle()<CR>";
         }
         {
           mode = "n";
