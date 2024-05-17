@@ -7,6 +7,7 @@
     newSession = true;
     plugins = with pkgs.tmuxPlugins; [
       vim-tmux-navigator
+      catppuccin
     ];
     secureSocket = false;
     terminal = "tmux-256color";
@@ -40,24 +41,30 @@
 
       set -g base-index 1
 
-
       bind-key -r f run-shell "tmux neww tmux-sessionizer"
 
       # set-window-option -g mode-keys vi
       bind -T copy-mode-vi v send-keys -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
 
-       # vim-like pane switching
-      bind-key ^ last-window
-      bind-key h select-pane -L
-      bind-key j select-pane -D
-      bind-key k select-pane -U
-      bind-key l select-pane -R
-
       bind-key & kill-window
       bind-key x kill-pane
 
       bind-key -r D run-shell "~/scripts/tmux-sessionizer ~/git/github/mattybritt/dot"
+
+      set -g @catppuccin_window_right_separator "█ "
+      set -g @catppuccin_window_number_position "right"
+      set -g @catppuccin_window_middle_separator " | "
+
+      set -g @catppuccin_window_default_fill "none"
+
+      set -g @catppuccin_window_current_fill "all"
+
+      set -g @catppuccin_status_modules_right "application session user host date_time"
+      set -g @catppuccin_status_left_separator "█"
+      set -g @catppuccin_status_right_separator "█"
+
+      set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
     '';
   };
 }
