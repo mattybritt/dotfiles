@@ -2,7 +2,7 @@
   host, gtkThemeFromScheme, ... }:
 let 
   inherit (import ./../../hosts/${host}/options.nix)
-    gitUsername gitEmail theme  
+    gitUsername gitEmail theme;
 in {
   # Home Manager Settings
   home.username = "${username}";
