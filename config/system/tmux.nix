@@ -37,6 +37,11 @@
        # don't rename windows automatically
       set-option -g allow-rename off
 
+      bind-key h select-pane -L
+      bind-key j select-pane -D
+      bind-key k select-pane -U
+      bind-key l select-pane -R
+
       set -g status-position top
 
       set -g base-index 1
