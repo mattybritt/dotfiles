@@ -3,7 +3,6 @@
 {
   # Place Files Inside Home Directory
   home.file.".emoji".source = ./files/emoji;
-  home.file.".tmux.conf".source = ./files/tmux/.tmux.conf;
   home.file.".base16-themes".source = ./files/base16-themes;
   home.file.".config/starship.toml".source = ./files/starship.toml;
   home.file.".scripts" = {
