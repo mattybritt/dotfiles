@@ -62,6 +62,7 @@
         nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
         which-key.enable = true;
+        tmux-navigator.enable = true;
       };
 
       colorschemes.catppuccin = {
