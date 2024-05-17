@@ -62,6 +62,7 @@
         nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
         which-key.enable = true;
+        tmux-navigator.enable = true;
       };
 
       colorschemes.catppuccin = {
@@ -77,7 +78,10 @@
           end,
           group = highlight_group,
           pattern = '*',
-        })'';
+        })
+        require('nvim-dap-virtual-text').setup()
+        vim.fn.sign_define('DapBreakpoint', { text='⭕', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl='DapBreakpoint' })
+        '';
 
       #This will set transparency
       # extraConfigLua = ''
