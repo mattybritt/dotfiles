@@ -19,12 +19,10 @@ in {
     (import ./../scripts/wallsetter.nix { inherit pkgs; inherit wallpaperDir;
       inherit username; inherit wallpaperGit; })
     (import ./../scripts/themechange.nix { inherit pkgs; inherit flakeDir; inherit host; })
-    (import ./../scripts/theme-selector.nix { inherit pkgs; })
     (import ./../scripts/nvidia-offload.nix { inherit pkgs; })
     (import ./../scripts/web-search.nix { inherit pkgs; })
     (import ./../scripts/rofi-launcher.nix { inherit pkgs; })
     (import ./../scripts/screenshootin.nix { inherit pkgs; })
-    (import ./../scripts/list-hypr-bindings.nix { inherit pkgs; inherit host; })
   ];
 
   programs.gh.enable = true;
