@@ -94,8 +94,8 @@
           src = pkgs.fetchFromGitHub {
               owner = "mattybritt";
               repo = "vim-tmux-navigator";
-              rev = "23dff1f3512a73a817d6ebf184dc7abd930205a9";
-              hash = "sha256-62YM2UG87xgpaBYKpAeqJa2+jOMY6rlfE31CRgsFiEk=";
+              rev = "4a2690c";
+              hash = "sha256-RpAzsw9Mbgin3lZ8T9X8ZyJfCjV2zQj3Be6eACd0zpg=";
           };
       })];
     };

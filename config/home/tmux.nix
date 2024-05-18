@@ -1,13 +1,27 @@
-{ pkgs, ... }: {
-  programs.tmux = {
+{ pkgs, ... }:
+  let
+   vim-tmux-navigator = pkgs.tmuxPlugins.mkTmuxPlugin {
+        pluginName = "vim-tmux-navigator";
+        rtpFilePath = "vim-tmux-navigator.tmux";
+        version = "2024-05-24";
+        src = pkgs.fetchFromGitHub {
+            owner = "mattybritt";
+            repo = "vim-tmux-navigator";
+            rev = "4a2690c6b304c56e5ebc22d12669cd8e9be7d58a";
+            hash = "sha256-RpAzsw9Mbgin3lZ8T9X8ZyJfCjV2zQj3Be6eACd0zpg=";
+        };
+    };
+  in
+  {
+    programs.tmux = {
     enable = true;
     aggressiveResize = true;
     clock24 = true;
     escapeTime = 0;
     newSession = true;
     plugins = with pkgs.tmuxPlugins; [
-      vim-tmux-navigator
       catppuccin
+      vim-tmux-navigator
     ];
     secureSocket = false;
     terminal = "tmux-256color";
@@ -36,17 +50,6 @@
 
        # don't rename windows automatically
       set-option -g allow-rename off
-
-      # bind-key h select-pane -L
-      # bind-key j select-pane -D
-      # bind-key k select-pane -U
-      # bind-key l select-pane -R
-
-      # #todo sort with above
-      # bind h  select-pane -L
-      # bind j  select-pane -D
-      # bind k  select-pane -U
-      # bind l  select-pane -R
 
       set -g status-position top
 
@@ -77,6 +80,6 @@
 
       set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
     '';
+
   };
 }
-
