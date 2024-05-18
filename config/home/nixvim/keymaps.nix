@@ -22,18 +22,18 @@
         {
           mode = "n"; key = "<c-l>"; action = ":wincmd l<CR>"; #right window move
         }
-        # {
-        #   mode = "n"; key = "<c-k>"; action = "<CMD><C-U>TmuxNavigateUp<CR>"; #up window move
-        # }
-        # {
-        #   mode = "n"; key = "<c-j>"; action = "<CMD><C-U>TmuxNavigateDown<CR>"; #down window move
-        # }
-        # {
-        #   mode = "n"; key = "<c-h>"; action = "<CMD><C-U>TmuxNavigateLeft<CR>"; #left window move
-        # }
-        # {
-        #   mode = "n"; key = "<c-l>"; action = "<CMD><C-U>TmuxNavigateRight<CR>"; #right window move
-        # }
+        {
+          mode = "n"; key = "<c-k>"; action = "<CMD><C-U>TmuxNavigateUp<CR>"; #up window move
+        }
+        {
+          mode = "n"; key = "<c-j>"; action = "<CMD><C-U>TmuxNavigateDown<CR>"; #down window move
+        }
+        {
+          mode = "n"; key = "<c-h>"; action = "<CMD><C-U>TmuxNavigateLeft<CR>"; #left window move
+        }
+        {
+          mode = "n"; key = "<c-l>"; action = "<CMD><C-U>TmuxNavigateRight<CR>"; #right window move
+        }
         {
           mode = "n"; key = "<c-f>"; action = "<CMD>silent !tmux neww tmux-sessionizer<CR>"; #tmux from vim
         }

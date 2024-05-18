@@ -37,10 +37,16 @@
        # don't rename windows automatically
       set-option -g allow-rename off
 
-      bind-key h select-pane -L
-      bind-key j select-pane -D
-      bind-key k select-pane -U
-      bind-key l select-pane -R
+      # bind-key h select-pane -L
+      # bind-key j select-pane -D
+      # bind-key k select-pane -U
+      # bind-key l select-pane -R
+
+      # #todo sort with above
+      # bind h  select-pane -L
+      # bind j  select-pane -D
+      # bind k  select-pane -U
+      # bind l  select-pane -R
 
       set -g status-position top
 

@@ -62,7 +62,6 @@
         nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
         which-key.enable = true;
-        tmux-navigator.enable = true;
       };
 
       colorschemes.catppuccin = {
@@ -89,7 +88,16 @@
       #   vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
       #   vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
       # '';
-     
+
+      extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
+          name = "vim-tmux-navigator";
+          src = pkgs.fetchFromGitHub {
+              owner = "mattybritt";
+              repo = "vim-tmux-navigator";
+              rev = "23dff1f3512a73a817d6ebf184dc7abd930205a9";
+              hash = "sha256-62YM2UG87xgpaBYKpAeqJa2+jOMY6rlfE31CRgsFiEk=";
+          };
+      })];
     };
   };
 }
