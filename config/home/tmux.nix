@@ -7,8 +7,8 @@
         src = pkgs.fetchFromGitHub {
             owner = "mattybritt";
             repo = "vim-tmux-navigator";
-            rev = "4a2690c6b304c56e5ebc22d12669cd8e9be7d58a";
-            hash = "sha256-RpAzsw9Mbgin3lZ8T9X8ZyJfCjV2zQj3Be6eACd0zpg=";
+            rev = "ce12b68";
+            hash = "sha256-0BTJ1t1XRDKA2RQ/Vmlp35svT9EGmYH6r9s+fGKigGY=";
         };
     };
   in
