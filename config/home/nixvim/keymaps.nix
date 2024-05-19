@@ -4,30 +4,30 @@
   programs = {
     nixvim = {
       keymaps = [
-        {  
+        {
           mode = "n"; key = "<leader>e"; action = "<CMD>NvimTreeToggle<NL>";
         }
         {
           mode = "n"; key = "<c-n>"; action = "<CMD>NvimTreeFindFileToggle<NL>";
         }
         {
-          mode = "n"; key = "<c-k>"; action = ":wincmd k<CR>"; #up window move
+          mode = "n"; key = "<c-k>"; action = "<cmd><C-U>TmuxNavigateUp<cr>"; #up window move
         }
         {
-          mode = "n"; key = "<c-j>"; action = ":wincmd j<CR>"; #down window move
+          mode = "n"; key = "<c-j>"; action = "<cmd><C-U>TmuxNavigateDown<cr>"; #down window move
         }
         {
-          mode = "n"; key = "<c-h>"; action = ":wincmd h<CR>"; #left window move
+          mode = "n"; key = "<c-h>"; action = "<cmd><C-U>TmuxNavigateLeft<cr>"; #left window move
         }
         {
-          mode = "n"; key = "<c-l>"; action = ":wincmd l<CR>"; #right window move
+          mode = "n"; key = "<c-l>"; action = "<cmd><C-U>TmuxNavigateRight<cr>"; #right window move
         }
         {
           mode = "n"; key = "<c-f>"; action = "<CMD>silent !tmux neww tmux-sessionizer<CR>"; #tmux from vim
         }
         {
-          mode = "v"; key = "J"; action = ":m '>+1<CR>gv=gv"; #move selected block down 
-        } 
+          mode = "v"; key = "J"; action = ":m '>+1<CR>gv=gv"; #move selected block down
+        }
         {
           mode = "v"; key = "K"; action = ":m '<-2<CR>gv=gv"; #move selected block up
         }
@@ -66,30 +66,30 @@
         }
         #twilight
         {
-          mode = "n"; key = "tw"; action = ":Twilight<enter>"; 
+          mode = "n"; key = "tw"; action = ":Twilight<enter>";
         }
         #buffers
         {
-          mode = "n"; key = "tk"; action = ":blast<enter>"; 
+          mode = "n"; key = "tk"; action = ":blast<enter>";
         }
         {
-          mode = "n"; key = "tj"; action = ":bfirst<enter>"; 
+          mode = "n"; key = "tj"; action = ":bfirst<enter>";
         }
         {
-          mode = "n"; key = "th"; action = ":bprevious<enter>"; 
+          mode = "n"; key = "th"; action = ":bprevious<enter>";
         }
         {
-          mode = "n"; key = "tl"; action = ":bnext<enter>"; 
+          mode = "n"; key = "tl"; action = ":bnext<enter>";
         }
         {
-          mode = "n"; key = "td"; action = ":bdelete<enter>"; 
+          mode = "n"; key = "td"; action = ":bdelete<enter>";
         }
         #files
         {
-          mode = "n"; key = "QQ"; action = ":q!<enter>"; 
+          mode = "n"; key = "QQ"; action = ":q!<enter>";
         }
         {
-          mode = "n"; key = "WW"; action = ":w!<enter>"; 
+          mode = "n"; key = "WW"; action = ":w!<enter>";
         }
       ];
     };

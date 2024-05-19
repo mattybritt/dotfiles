@@ -62,6 +62,7 @@
         nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
         which-key.enable = true;
+        tmux-navigator.enable = true;
       };
 
       colorschemes.catppuccin = {
@@ -82,6 +83,7 @@
         vim.fn.sign_define('DapBreakpoint', { text='⭕', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl='DapBreakpoint' })
         '';
 
+
       #This will set transparency
       # extraConfigLua = ''
       #   vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
@@ -89,15 +91,15 @@
       #   vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
       # '';
 
-      extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
-          name = "vim-tmux-navigator";
-          src = pkgs.fetchFromGitHub {
-              owner = "mattybritt";
-              repo = "vim-tmux-navigator";
-              rev = "4a2690c";
-              hash = "sha256-RpAzsw9Mbgin3lZ8T9X8ZyJfCjV2zQj3Be6eACd0zpg=";
-          };
-      })];
+      # extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
+      #     name = "vim-tmux-navigator";
+      #     src = pkgs.fetchFromGitHub {
+      #         owner = "mattybritt";
+      #         repo = "vim-tmux-navigator";
+      #         rev = "4a2690c";
+      #         hash = "sha256-RpAzsw9Mbgin3lZ8T9X8ZyJfCjV2zQj3Be6eACd0zpg=";
+      #     };
+      # })];
     };
   };
 }

@@ -1,17 +1,17 @@
 { pkgs, ... }:
-  let
-   vim-tmux-navigator = pkgs.tmuxPlugins.mkTmuxPlugin {
-        pluginName = "vim-tmux-navigator";
-        rtpFilePath = "vim-tmux-navigator.tmux";
-        version = "2024-05-24";
-        src = pkgs.fetchFromGitHub {
-            owner = "mattybritt";
-            repo = "vim-tmux-navigator";
-            rev = "ce12b68";
-            hash = "sha256-0BTJ1t1XRDKA2RQ/Vmlp35svT9EGmYH6r9s+fGKigGY=";
-        };
-    };
-  in
+  # let
+  #  vim-tmux-navigator = pkgs.tmuxPlugins.mkTmuxPlugin {
+  #       pluginName = "vim-tmux-navigator";
+  #       rtpFilePath = "vim-tmux-navigator.tmux";
+  #       version = "2024-05-24";
+  #       src = pkgs.fetchFromGitHub {
+  #           owner = "mattybritt";
+  #           repo = "vim-tmux-navigator";
+  #           rev = "fc648aa";
+  #           hash = "sha256-W09MxNFgmA4MbpWgwXgJUDHAhFts2WmJ3V1TW/DKwG4=";
+  #       };
+  #   };
+  # in
   {
     programs.tmux = {
     enable = true;
@@ -28,8 +28,6 @@
     historyLimit = 30000;
     keyMode = "vi";
     extraConfig = ''
-      set-option -g default-command fish
-
       set -s escape-time 0
 
       unbind C-b
