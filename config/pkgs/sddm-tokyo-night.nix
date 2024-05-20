@@ -12,8 +12,8 @@ stdenvNoCC.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "mattybritt";
     repo = "tokyo-night-sddm";
-    rev = "38167bc";
-    sha256 = "sha256-KoNR3IbLASLECsWlnc3X3LuOuN+VbCPcEpC3DijpmKs=";
+    rev = "befaf46";
+    sha256 = "sha256-ADA83M9TwKzf66Dr4cBn78XxmAELiYqKjs/nGdAer8U=";
   };
   nativeBuildInputs = [
     wrapQtAppsHook
