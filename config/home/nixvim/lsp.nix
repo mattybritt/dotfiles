@@ -15,6 +15,8 @@
         gopls = {enable = true;};
         tsserver = {enable = false;};
         yamlls = { enable = true; };
+        omnisharp = { enable = true; };
+        marksman = { enable = true; };
         rust-analyzer = { 
           enable = true;
           installCargo = true;
