@@ -1,17 +1,4 @@
 { pkgs, ... }:
-  # let
-  #  vim-tmux-navigator = pkgs.tmuxPlugins.mkTmuxPlugin {
-  #       pluginName = "vim-tmux-navigator";
-  #       rtpFilePath = "vim-tmux-navigator.tmux";
-  #       version = "2024-05-24";
-  #       src = pkgs.fetchFromGitHub {
-  #           owner = "mattybritt";
-  #           repo = "vim-tmux-navigator";
-  #           rev = "fc648aa";
-  #           hash = "sha256-W09MxNFgmA4MbpWgwXgJUDHAhFts2WmJ3V1TW/DKwG4=";
-  #       };
-  #   };
-  # in
   {
     programs.tmux = {
     enable = true;
@@ -21,7 +8,6 @@
     newSession = true;
     plugins = with pkgs.tmuxPlugins; [
       catppuccin
-      vim-tmux-navigator
     ];
     secureSocket = false;
     terminal = "tmux-256color";
@@ -59,8 +45,14 @@
       bind -T copy-mode-vi v send-keys -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
 
-      bind-key & kill-window
+      bind-key ^ last-window
+      bind-key h select-pane -L
+      bind-key j select-pane -D
+      bind-key k select-pane -U
+      bind-key l select-pane -R
+
       bind-key x kill-pane
+      bind-key & kill-window
 
       bind-key -r D run-shell "~/scripts/tmux-sessionizer ~/git/github/mattybritt/dot"
 
