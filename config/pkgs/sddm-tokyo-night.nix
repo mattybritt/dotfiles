@@ -10,10 +10,10 @@ stdenvNoCC.mkDerivation rec {
   version = "1..0";
   dontBuild = true;
   src = fetchFromGitHub {
-    owner = "rototrash";
+    owner = "mattybritt";
     repo = "tokyo-night-sddm";
-    rev = "320c8e74ade1e94f640708eee0b9a75a395697c6";
-    sha256 = "sha256-JRVVzyefqR2L3UrEK2iWyhUKfPMUNUnfRZmwdz05wL0=";
+    rev = "38167bc";
+    sha256 = "sha256-KoNR3IbLASLECsWlnc3X3LuOuN+VbCPcEpC3DijpmKs=";
   };
   nativeBuildInputs = [
     wrapQtAppsHook
