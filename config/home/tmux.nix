@@ -1,12 +1,12 @@
-{ pkgs, ... }: {
-  programs.tmux = {
+{ pkgs, ... }:
+  {
+    programs.tmux = {
     enable = true;
     aggressiveResize = true;
     clock24 = true;
     escapeTime = 0;
     newSession = true;
     plugins = with pkgs.tmuxPlugins; [
-      vim-tmux-navigator
       catppuccin
     ];
     secureSocket = false;
@@ -14,8 +14,6 @@
     historyLimit = 30000;
     keyMode = "vi";
     extraConfig = ''
-      set-option -g default-command fish
-
       set -s escape-time 0
 
       unbind C-b
@@ -47,8 +45,14 @@
       bind -T copy-mode-vi v send-keys -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
 
-      bind-key & kill-window
+      bind-key ^ last-window
+      bind-key h select-pane -L
+      bind-key j select-pane -D
+      bind-key k select-pane -U
+      bind-key l select-pane -R
+
       bind-key x kill-pane
+      bind-key & kill-window
 
       bind-key -r D run-shell "~/scripts/tmux-sessionizer ~/git/github/mattybritt/dot"
 
@@ -66,6 +70,6 @@
 
       set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
     '';
+
   };
 }
-

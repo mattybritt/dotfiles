@@ -14,11 +14,12 @@
     ./packages.nix
     ./rofi.nix
     ./starship.nix
-    ./waybar.nix
-    ./wlogout.nix
     ./swappy.nix
     ./swaync.nix
+    ./tmux.nix
+    ./waybar.nix
     ./wezterm.nix
+    ./wlogout.nix
     ./zeroad.nix
 
     # Place Home Files Like Pictures

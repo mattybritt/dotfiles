@@ -26,6 +26,5 @@
     ./syncthing.nix
     ./vm.nix
     ./rust.nix
-    ./tmux.nix
   ];
 }
