@@ -80,14 +80,11 @@
         })
         require('nvim-dap-virtual-text').setup()
         vim.fn.sign_define('DapBreakpoint', { text='⭕', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl='DapBreakpoint' })
-        '';
+        vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 
-      #This will set transparency
-      # extraConfigLua = ''
-      #   vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
-      #   vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
-      #   vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
-      # '';
+        vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
+        vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
+        '';
     };
   };
 }
