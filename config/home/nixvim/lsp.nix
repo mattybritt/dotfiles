@@ -13,6 +13,7 @@
         html = {enable = true;};
         lua-ls = {enable = true;};
         gopls = {enable = true;};
+        templ = {enable = true;};
         tsserver = {enable = false;};
         yamlls = { enable = true; };
         omnisharp = { enable = true; };
