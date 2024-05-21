@@ -9,6 +9,7 @@
     ./displaymanager.nix
     ./distrobox.nix
     ./flatpak.nix
+    ./go.nix
     ./hwclock.nix
     ./intel-amd.nix
     ./intel-gpu.nix
@@ -20,11 +21,11 @@
     ./nvidia.nix
     ./packages.nix
     ./polkit.nix
-    ./python.nix
     ./printer.nix
+    ./python.nix
+    ./rust.nix
     ./services.nix
     ./syncthing.nix
     ./vm.nix
-    ./rust.nix
   ];
 }

@@ -54,7 +54,7 @@
       bind-key x kill-pane
       bind-key & kill-window
 
-      bind-key -r D run-shell "~/scripts/tmux-sessionizer ~/git/github/mattybritt/dot"
+      bind-key -r D run-shell "~/scripts/tmux-sessionizer"
 
       set -g @catppuccin_window_right_separator "█ "
       set -g @catppuccin_window_number_position "right"
