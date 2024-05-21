@@ -21,6 +21,7 @@
       python = [ "isort" "black" ];
       rust = [ "rustfmt" ];
       sh = [ "shfmt" ];
+      nix = [ "fmt" ];
     };
   };
 }
