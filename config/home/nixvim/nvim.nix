@@ -84,6 +84,8 @@
 
         vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
         vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
+
+        vim.filetype.add({ extension = { templ = "templ" } })
         '';
     };
   };

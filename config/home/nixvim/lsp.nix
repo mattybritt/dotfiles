@@ -63,7 +63,7 @@
             action = "code_action";
             desc = "Code Action";
           };
-          "<leader>f" = {
+          "<leader>cf" = {
             action = "format";
             desc = "Format";
           };
