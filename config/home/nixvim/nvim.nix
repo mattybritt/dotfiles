@@ -48,6 +48,7 @@
 
       plugins = {
         copilot-vim.enable = true; #copilot support for vim
+        hardtime.enable = true;
         lspkind.enable = true; #Pictograms to neovim built-in lsp
         lsp-lines = { #lsp prompt lines
           enable = true;
@@ -55,11 +56,11 @@
         lualine.enable = true; #footer line
         luasnip.enable = true; #snippets
         nix.enable = true; # support nix expressions
+        nvim-autopairs.enable = true; #bracket pairing
         nvim-colorizer.enable = true; #hex colours
         rust-tools.enable = true; # rust tooling
-        undotree.enable = true; #undo kak
-        nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
+        undotree.enable = true; #undo kak
         which-key.enable = true;
       };
 
