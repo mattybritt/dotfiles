@@ -44,6 +44,9 @@
           mode = "n"; key = "<C-u>"; action = "<C-u>zz"; #Moves up and keeps buffer centered at cursor
         }
         {
+          mode = "n"; key = "<C-d>"; action = "<C-d>zz"; #Moves down and keeps buffer centered at cursor
+        }
+        {
           mode = "n"; key = "Q"; action = "<nop>"; #Ignore caps Q
         }
         {
