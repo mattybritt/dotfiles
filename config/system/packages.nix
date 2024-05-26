@@ -12,7 +12,7 @@
     pkg-config meson hugo gnumake ninja nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl
     toybox virt-viewer swappy ripgrep appimage-run
-    networkmanagerapplet yad playerctl nh fzf bash bat just eza zoxide
+    networkmanagerapplet yad playerctl nh fzf bash bat just eza zoxide gcc
   ];
 
   programs = {
