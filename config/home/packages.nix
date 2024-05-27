@@ -10,7 +10,7 @@ in {
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp obs-studio audacity pavucontrol tree protonup-qt
     font-awesome spotify swayidle vscode brave azuredatastudio
-    bitwarden speedtest-cli
+    bitwarden speedtest-cli tmuxifier
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })
