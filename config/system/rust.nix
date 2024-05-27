@@ -4,5 +4,6 @@
     rustc
     cargo
     dioxus-cli
+    bacon
   ];
 }
