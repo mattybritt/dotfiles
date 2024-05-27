@@ -50,9 +50,6 @@
         copilot-vim.enable = true; #copilot support for vim
         hardtime.enable = true;
         lspkind.enable = true; #Pictograms to neovim built-in lsp
-        lsp-lines = { #lsp prompt lines
-          enable = true;
-        };
         lualine.enable = true; #footer line
         luasnip.enable = true; #snippets
         nix.enable = true; # support nix expressions
