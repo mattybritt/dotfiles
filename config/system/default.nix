@@ -17,6 +17,7 @@
     ./kernel.nix
     ./logitech.nix
     ./nfs.nix
+    ./node.nix
     ./ntp.nix
     ./nvidia.nix
     ./packages.nix
