@@ -9,6 +9,7 @@
     ./displaymanager.nix
     ./distrobox.nix
     ./flatpak.nix
+    ./gammastep.nix
     ./go.nix
     ./hwclock.nix
     ./intel-amd.nix
