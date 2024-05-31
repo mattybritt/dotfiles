@@ -27,6 +27,7 @@
     ./python.nix
     ./rust.nix
     ./services.nix
+    ./slack.nix
     ./syncthing.nix
     ./vm.nix
   ];
