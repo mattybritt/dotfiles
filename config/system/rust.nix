@@ -6,5 +6,6 @@
     cargo-watch
     dioxus-cli
     bacon
+    rustfmt
   ];
 }
