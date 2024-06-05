@@ -15,6 +15,8 @@ in with lib; {
     enable = true;
     xwayland.enable = true;
     systemd.enable = true;
+    # monitor=DP-1,3840x2160@60,0x0,1
+    # monitor=HDMI-A-1,3840x2160@60,3840x0,1
     plugins = [
       # hyprplugins.hyprtrails
     ];
@@ -124,6 +126,14 @@ in with lib; {
       master {
         new_is_master = true
       }
+      workspace = 1, monitor:DP-1, on-created-empty:firefox
+      workspace = 2, monitor:DP-1, on-created-empty:slack
+      workspace = 3, monitor:DP-1, on-created-empty:spotify
+
+      workspace = 6, monitor:HDMI-A-1, on-created-empty:kitty
+      workspace = 7, monitor:HDMI-A-1, on-created-empty:azuredatastudio
+      workspace = 8, monitor:HDMI-A-1
+
       bind = ${modifier},Return,exec,${terminal}
       bind = ${modifier},D,exec,rofi-launcher
       bind = ${modifier}SHIFT,W,exec,web-search
@@ -161,28 +171,25 @@ in with lib; {
       bind = ${modifier},l,movefocus,r
       bind = ${modifier_2},k,movefocus,u
       bind = ${modifier_2},j,movefocus,d
+
       bind = ${modifier_2},1,workspace,1
       bind = ${modifier_2},2,workspace,2
       bind = ${modifier_2},3,workspace,3
-      bind = ${modifier_2},4,workspace,4
-      bind = ${modifier_2},5,workspace,5
+
       bind = ${modifier},6,workspace,6
       bind = ${modifier},7,workspace,7
       bind = ${modifier},8,workspace,8
-      bind = ${modifier},9,workspace,9
-      bind = ${modifier},0,workspace,10
+
       bind = ${modifier}SHIFT,SPACE,movetoworkspace,special
       bind = ${modifier},SPACE,togglespecialworkspace
       bind = ${modifier_2}SHIFT,1,movetoworkspace,1
       bind = ${modifier_2}SHIFT,2,movetoworkspace,2
       bind = ${modifier_2}SHIFT,3,movetoworkspace,3
-      bind = ${modifier_2}SHIFT,4,movetoworkspace,4
-      bind = ${modifier_2}SHIFT,5,movetoworkspace,5
+
       bind = ${modifier}SHIFT,6,movetoworkspace,6
       bind = ${modifier}SHIFT,7,movetoworkspace,7
       bind = ${modifier}SHIFT,8,movetoworkspace,8
-      bind = ${modifier}SHIFT,9,movetoworkspace,9
-      bind = ${modifier}SHIFT,0,movetoworkspace,10
+
       bind = ${modifier}CONTROL,right,workspace,e+1
       bind = ${modifier}CONTROL,left,workspace,e-1
       bind = ${modifier},mouse_down,workspace, e+1
