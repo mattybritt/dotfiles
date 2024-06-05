@@ -132,7 +132,14 @@ in with lib; {
 
       workspace = 6, monitor:HDMI-A-1, on-created-empty:kitty
       workspace = 7, monitor:HDMI-A-1, on-created-empty:azuredatastudio
-      workspace = 8, monitor:HDMI-A-1
+      workspace = 8, monitor:HDMI-A-1, on-created-empty: VirtualBox
+
+      windowrule = workspace 1,^(firefox)$
+      windowrule = workspace 2,^(Slack)$
+      windowrule = workspace 3,title:^(Spotify Premium)$
+      windowrule = workspace 6,^(kitty)$
+      windowrule = workspace 7,^(azuredatastudio)$
+      windowrule = workspace 8,title:^(VirtualBox)$
 
       bind = ${modifier},Return,exec,${terminal}
       bind = ${modifier},D,exec,rofi-launcher
