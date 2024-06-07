@@ -130,16 +130,16 @@ in with lib; {
       workspace = 2, monitor:DP-1, on-created-empty:slack
       workspace = 3, monitor:DP-1, on-created-empty:spotify
 
-      workspace = 6, monitor:HDMI-A-1, on-created-empty:kitty, default:true
-      workspace = 7, monitor:HDMI-A-1, on-created-empty:azuredatastudio
-      workspace = 8, monitor:HDMI-A-1, on-created-empty: VirtualBox
+      workspace = 4, monitor:HDMI-A-1, on-created-empty:kitty, default:true
+      workspace = 5, monitor:HDMI-A-1, on-created-empty:azuredatastudio
+      workspace = 6, monitor:HDMI-A-1, on-created-empty: VirtualBox
 
       windowrule = workspace 1,^(firefox)$
       windowrule = workspace 2,^(Slack)$
       windowrule = workspace 3,title:^(Spotify Premium)$
-      windowrule = workspace 6,^(kitty)$
-      windowrule = workspace 7,^(azuredatastudio)$
-      windowrule = workspace 8,title:^(VirtualBox)$
+      windowrule = workspace 4,^(kitty)$
+      windowrule = workspace 5,^(azuredatastudio)$
+      windowrule = workspace 6,title:^(VirtualBox)$
 
       bind = ${modifier},Return,exec,${terminal}
       bind = ${modifier},D,exec,rofi-launcher
@@ -183,9 +183,9 @@ in with lib; {
       bind = ${modifier_2},2,workspace,2
       bind = ${modifier_2},3,workspace,3
 
-      bind = ${modifier},6,workspace,6
-      bind = ${modifier},7,workspace,7
-      bind = ${modifier},8,workspace,8
+      bind = ${modifier},6,workspace,4
+      bind = ${modifier},7,workspace,5
+      bind = ${modifier},8,workspace,6
 
       bind = ${modifier}SHIFT,SPACE,movetoworkspace,special
       bind = ${modifier},SPACE,togglespecialworkspace
@@ -193,9 +193,9 @@ in with lib; {
       bind = ${modifier_2}SHIFT,2,movetoworkspace,2
       bind = ${modifier_2}SHIFT,3,movetoworkspace,3
 
-      bind = ${modifier}SHIFT,6,movetoworkspace,6
-      bind = ${modifier}SHIFT,7,movetoworkspace,7
-      bind = ${modifier}SHIFT,8,movetoworkspace,8
+      bind = ${modifier}SHIFT,6,movetoworkspace,4
+      bind = ${modifier}SHIFT,7,movetoworkspace,5
+      bind = ${modifier}SHIFT,8,movetoworkspace,6
 
       bind = ${modifier}CONTROL,right,workspace,e+1
       bind = ${modifier}CONTROL,left,workspace,e-1

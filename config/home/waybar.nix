@@ -18,11 +18,22 @@ in with lib; {
       modules-right = [ "custom/exit" "idle_inhibitor" "custom/notification" "clock" "tray" ];
 
       "hyprland/workspaces" = {
-      	format = if bar-number == true then "{name}" else "{icon}";
-      	format-icons = {
-          default = " ";
-          active = " ";
-          urgent = " ";
+      	format = "{icon}";
+        format-icons = {
+          "1" = "";
+          "2" = "";
+          "3" = "";
+          "4" = "";
+          "5" = "";
+          "6" = "";
+      	};
+        persistent-workspaces = {
+          "1" = [""];
+          "2" = [""];
+          "3" = [""];
+          "4" = [""];
+          "5" = [""];
+          "6" = [""];
       	};
       	on-scroll-up = "hyprctl dispatch workspace e+1";
       	on-scroll-down = "hyprctl dispatch workspace e-1";
@@ -125,63 +136,62 @@ in with lib; {
 	font-family: JetBrainsMono Nerd Font, Font Awesome, sans-serif;
     	font-weight: bold;
       }
-      window#waybar {
-	background-color: #${palette.base00};
-	border-bottom: 1px solid rgba(26,27,38,0);
-	border-radius: 0px;
-	color: #${palette.base0F};
-      }
-      #workspaces {
-	background: #${palette.base01};
-	margin: 2px;
-	padding: 0px 1px;
-	border-radius: 15px;
-	border: 0px;
-	font-style: normal;
-	color: #${palette.base00};
-      }
-      #workspaces button {
+    window#waybar {
+      background-color: #${palette.base00};
+      border-bottom: 1px solid rgba(26,27,38,0);
+      border-radius: 0px;
+      color: #${palette.base0F};
+    }
+    #workspaces {
+      background: #${palette.base01};
+      margin: 2px;
+      padding: 0px 1px;
+      border-radius: 15px;
+      border: 0px;
+      font-style: normal;
+      color: #${palette.base00};
+    }
+    #workspaces button {
 	  padding: 0px 5px;
-	  margin: 4px 3px;
+	  margin: 4px 4px;
 	  border-radius: 10px;
 	  border: 0px;
 	  color: #${palette.base00};
-          background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-          background-size: 300% 300%;
-          ${if waybarAnim == true then ''
-            animation: gradient_horizontal 15s ease infinite;
-          '' else '' 
-          ''}
+      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
+      background-size: 300% 300%;
+      ${if waybarAnim == true then ''
+        animation: gradient_horizontal 15s ease infinite;
+      '' else '' 
+      ''}
 	  opacity: 0.5;
           transition: ${betterTransition};
       }
-      #workspaces button.active {
+    #workspaces button.active {
 	  padding: 0px 5px;
-	  margin: 4px 3px;
+	  margin: 4px 4px;
 	  border-radius: 10px;
 	  border: 0px;
 	  color: #${palette.base00};
-          background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-          background-size: 300% 300%;
-          ${if waybarAnim == true then ''
-            animation: gradient_horizontal 15s ease infinite;
-          '' else '' 
-          ''}
-          transition: ${betterTransition};
+      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
+      background-size: 300% 300%;
+      ${if waybarAnim == true then ''
+        animation: gradient_horizontal 15s ease infinite;
+      '' else '' 
+      ''}
+      transition: ${betterTransition};
 	  opacity: 1.0;
-	  min-width: 40px;
       }
-      #workspaces button:hover {
+    #workspaces button:hover {
 	  border-radius: 10px;
 	  color: #${palette.base00};
-          background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-          background-size: 300% 300%;
-          ${if waybarAnim == true then ''
-            animation: gradient_horizontal 15s ease infinite;
-          '' else '' 
-          ''}
+      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
+      background-size: 300% 300%;
+      ${if waybarAnim == true then ''
+        animation: gradient_horizontal 15s ease infinite;
+      '' else '' 
+      ''}
 	  opacity: 0.8;
-          transition: ${betterTransition};
+      transition: ${betterTransition};
       }
       @keyframes gradient_horizontal {
 	0% {
