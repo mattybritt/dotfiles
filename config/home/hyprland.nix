@@ -130,7 +130,7 @@ in with lib; {
       workspace = 2, monitor:DP-1, on-created-empty:slack
       workspace = 3, monitor:DP-1, on-created-empty:spotify
 
-      workspace = 6, monitor:HDMI-A-1, on-created-empty:kitty
+      workspace = 6, monitor:HDMI-A-1, on-created-empty:kitty, default:true
       workspace = 7, monitor:HDMI-A-1, on-created-empty:azuredatastudio
       workspace = 8, monitor:HDMI-A-1, on-created-empty: VirtualBox
 
