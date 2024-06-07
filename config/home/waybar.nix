@@ -132,8 +132,8 @@ in with lib; {
     }];
     style = concatStrings [''
       * {
-	font-size: 16px;
-	font-family: JetBrainsMono Nerd Font, Font Awesome, sans-serif;
+        font-size: 16px;
+        font-family: JetBrainsMono Nerd Font, sans-serif;
     	font-weight: bold;
       }
     window#waybar {
@@ -151,47 +151,9 @@ in with lib; {
       font-style: normal;
       color: #${palette.base00};
     }
-    #workspaces button {
-	  padding: 0px 5px;
-	  margin: 4px 4px;
-	  border-radius: 10px;
-	  border: 0px;
-	  color: #${palette.base00};
-      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-      background-size: 300% 300%;
-      ${if waybarAnim == true then ''
-        animation: gradient_horizontal 15s ease infinite;
-      '' else '' 
-      ''}
-	  opacity: 0.5;
-          transition: ${betterTransition};
-      }
     #workspaces button.active {
-	  padding: 0px 5px;
-	  margin: 4px 4px;
-	  border-radius: 10px;
-	  border: 0px;
-	  color: #${palette.base00};
-      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-      background-size: 300% 300%;
-      ${if waybarAnim == true then ''
-        animation: gradient_horizontal 15s ease infinite;
-      '' else '' 
-      ''}
-      transition: ${betterTransition};
+	  color: #${palette.base0E};
 	  opacity: 1.0;
-      }
-    #workspaces button:hover {
-	  border-radius: 10px;
-	  color: #${palette.base00};
-      background: linear-gradient(45deg, #${palette.base0E}, #${palette.base0F}, #${palette.base0D}, #${palette.base09});
-      background-size: 300% 300%;
-      ${if waybarAnim == true then ''
-        animation: gradient_horizontal 15s ease infinite;
-      '' else '' 
-      ''}
-	  opacity: 0.8;
-      transition: ${betterTransition};
       }
       @keyframes gradient_horizontal {
 	0% {
