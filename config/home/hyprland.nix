@@ -126,7 +126,7 @@ in with lib; {
       master {
         new_is_master = true
       }
-      workspace = 1, monitor:DP-1, on-created-empty:firefox
+      workspace = 1, monitor:DP-1, on-created-empty:brave
       workspace = 2, monitor:DP-1, on-created-empty:slack
       workspace = 3, monitor:DP-1, on-created-empty:spotify
 
@@ -134,7 +134,7 @@ in with lib; {
       workspace = 5, monitor:HDMI-A-1, on-created-empty:azuredatastudio
       workspace = 6, monitor:HDMI-A-1, on-created-empty: VirtualBox
 
-      windowrule = workspace 1,^(firefox)$
+      windowrule = workspace 1,^(brave)$
       windowrule = workspace 2,^(Slack)$
       windowrule = workspace 3,title:^(Spotify Premium)$
       windowrule = workspace 4,^(kitty)$

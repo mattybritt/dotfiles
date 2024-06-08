@@ -9,7 +9,7 @@ in {
     pkgs."${browser}" discord slack whatsapp-for-linux libvirt swww grim slurp gnome.file-roller
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp obs-studio audacity pavucontrol tree protonup-qt
-    font-awesome spotify swayidle vscode brave azuredatastudio
+    font-awesome spotify swayidle vscode azuredatastudio
     bitwarden speedtest-cli tmuxifier zathura obsidian gammastep
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
