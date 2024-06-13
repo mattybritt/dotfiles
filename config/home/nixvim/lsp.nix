@@ -7,7 +7,16 @@
       enable = true;
       servers = {
         eslint = {enable = true;};
-        cssls = {enable = true;};
+        cssls = {
+          enable = true;
+          settings = {
+            css = {
+              lint = {
+                unknownAtRules = "ignore";
+              };
+            };
+          };
+        };
         jsonls = {enable = true;};
         nixd = {enable = true;};
         html = {enable = true;};
