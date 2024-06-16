@@ -131,8 +131,8 @@ in with lib; {
       workspace = 3, monitor:DP-1, on-created-empty:spotify
 
       workspace = 4, monitor:HDMI-A-1, on-created-empty:kitty, default:true
-      workspace = 5, monitor:HDMI-A-1, on-created-empty:azuredatastudio
-      workspace = 6, monitor:HDMI-A-1, on-created-empty: VirtualBox
+      workspace = 5, monitor:HDMI-A-1
+      workspace = 6, monitor:HDMI-A-1
 
       windowrule = workspace 1,^(brave)$
       windowrule = workspace 2,^(Slack)$
@@ -145,11 +145,7 @@ in with lib; {
       bind = ${modifier},D,exec,rofi-launcher
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
-      ${if browser == "google-chrome" then ''
-	bind = ${modifier},W,exec,google-chrome-stable
-      '' else ''
-	bind = ${modifier},W,exec,${browser}
-      ''}
+      bind = ${modifier},W,exec,${browser}
       bind = ${modifier_2},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},G,exec,gimp
