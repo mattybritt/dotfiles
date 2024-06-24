@@ -35,6 +35,7 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp10s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.vboxnet0.useDHCP = lib.mkDefault true;
+  networking.firewall.trustedInterfaces = [ "virbr0" "virbr1" ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
