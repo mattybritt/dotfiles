@@ -15,14 +15,14 @@ in with lib; {
     enable = true;
     xwayland.enable = true;
     systemd.enable = true;
-    # monitor=DP-1,3840x2160@60,0x0,1
-    # monitor=HDMI-A-1,3840x2160@60,3840x0,1
     plugins = [
       # hyprplugins.hyprtrails
     ];
     extraConfig = let
       modifier = "MOD1";
       modifier_2 = "MOD4";
+      monitor1 = "DP-1";
+      monitor2 = "HDMI-A-1";
     in concatStrings [ ''
       monitor=,preferred,auto,1
       ${extraMonitorSettings}
@@ -126,20 +126,14 @@ in with lib; {
       master {
         new_is_master = true
       }
-      workspace = 1, monitor:DP-1, on-created-empty:brave
-      workspace = 2, monitor:DP-1, on-created-empty:slack
-      workspace = 3, monitor:DP-1, on-created-empty:spotify
 
-      workspace = 4, monitor:HDMI-A-1, on-created-empty:kitty, default:true
-      workspace = 5, monitor:HDMI-A-1
-      workspace = 6, monitor:HDMI-A-1
+      workspace = 1, monitor:${monitor2}
+      workspace = 2, monitor:${monitor2}
+      workspace = 3, monitor:${monitor2}
 
-      windowrule = workspace 1,^(brave)$
-      windowrule = workspace 2,^(Slack)$
-      windowrule = workspace 3,title:^(Spotify Premium)$
-      windowrule = workspace 4,^(kitty)$
-      windowrule = workspace 5,^(azuredatastudio)$
-      windowrule = workspace 6,title:^(VirtualBox)$
+      workspace = 4, monitor:${monitor1}
+      workspace = 5, monitor:${monitor1}
+      workspace = 6, monitor:${monitor1}
 
       bind = ${modifier},Return,exec,${terminal}
       bind = ${modifier},D,exec,rofi-launcher
