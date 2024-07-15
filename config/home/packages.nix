@@ -10,7 +10,7 @@ in {
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp obs-studio audacity pavucontrol tree protonup-qt
     font-awesome spotify swayidle vscode azuredatastudio
-    bitwarden speedtest-cli tmuxifier zathura obsidian gammastep
+    bitwarden speedtest-cli tmuxifier zathura obsidian gammastep burpsuite firefox
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })

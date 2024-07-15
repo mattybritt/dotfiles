@@ -35,6 +35,12 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp10s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.vboxnet0.useDHCP = lib.mkDefault true;
+
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 80 443 8080 ];  # 8080 is burpsuite proxy
+  };
+
   networking.firewall.trustedInterfaces = [ "virbr0" "virbr1" ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
