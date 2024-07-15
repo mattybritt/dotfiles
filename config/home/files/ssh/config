@@ -13,3 +13,7 @@ Host gitp24
     IdentityFile ~/.ssh/id_ed25519_p24
     IdentitiesOnly yes
 
+Host gitmb1664hackerone
+    Hostname github.com
+    IdentityFile ~/.ssh/id_ed25519_mb1664hackerone
+    IdentitiesOnly yes
