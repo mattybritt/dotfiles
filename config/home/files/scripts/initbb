@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+function init() {
+  echo "Initing dir for $1"
+  mkdir domains
+  mkdir downloads
+  mkdir github
+  mkdir notes
+  git init
+  echo "Done"
+}
+
+if [ -z "$1" ]; then #no arguments provided
+  echo "Bounty name needed."
+else
+  init $1
+fi
+
