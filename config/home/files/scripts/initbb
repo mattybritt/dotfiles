@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Initialises a new bug bounty program
+
 function init() {
   echo "Initing dir for $1"
 
