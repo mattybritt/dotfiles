@@ -3,15 +3,21 @@
 function init() {
   echo "Initing dir for $1"
 
+  mkdir $1
+  cd $1
+
   mkdir domains
   mkdir downloads
   mkdir github
   mkdir notes
 
-  echo "$1 bounty program." > ./notes/README.md
+  echo "$1 bounty program." > ./README.md
 
   git init
-  git commit -am "Initial commit for $1"
+  git branch -m main
+  git add -A
+  git commit -m "Initial commit"
+
   echo "Please setup your git remote."
   echo "Done"
 }
