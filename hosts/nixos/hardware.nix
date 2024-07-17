@@ -43,6 +43,10 @@
 
   networking.firewall.trustedInterfaces = [ "virbr0" "virbr1" ];
 
+  networking.extraHosts = ''
+     152.42.149.189 vps
+  '';
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
