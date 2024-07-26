@@ -6,6 +6,7 @@
     ./boot.nix
     ./displaymanager.nix
     ./distrobox.nix
+    ./elixir.nix
     ./flatpak.nix
     ./gammastep.nix
     ./go.nix
