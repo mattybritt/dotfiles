@@ -6,7 +6,6 @@
     lsp = {
       enable = true;
       servers = {
-        eslint = {enable = true;};
         cssls = {
           enable = true;
           settings = {
@@ -17,21 +16,23 @@
             };
           };
         };
-        jsonls = {enable = true;};
-        nixd = {enable = true;};
-        html = {enable = true;};
-        lua-ls = {enable = true;};
+        elixirls = {enable = true;};
+        eslint = {enable = true;};
         gopls = {enable = true;};
-        templ = {enable = true;};
-        tsserver = {enable = false;};
-        yamlls = { enable = true; };
-        omnisharp = { enable = true; };
+        html = {enable = true;};
+        jsonls = {enable = true;};
+        lua-ls = {enable = true;};
         marksman = { enable = true; };
+        nixd = {enable = true;};
+        omnisharp = { enable = true; };
         rust-analyzer = { 
           enable = true;
           installCargo = true;
           installRustc = true;
         };
+        templ = {enable = true;};
+        tsserver = {enable = false;};
+        yamlls = { enable = true; };
       };
       keymaps = {
         silent = true;
