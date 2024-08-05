@@ -38,7 +38,7 @@
 
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 80 443 8080 ];  # 8080 is burpsuite proxy
+    allowedTCPPorts = [ 80 443 5433 8080 ];  # 8080 is burpsuite proxy # 5433 is postgres
   };
 
   networking.firewall.trustedInterfaces = [ "virbr0" "virbr1" ];
