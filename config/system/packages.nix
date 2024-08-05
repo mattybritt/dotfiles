@@ -12,7 +12,7 @@
     pkg-config meson hugo gnumake ninja symbola
     noto-fonts-color-emoji material-icons brightnessctl
     toybox virt-viewer spice spice-protocol win-virtio win-spice swappy ripgrep appimage-run
-    networkmanagerapplet yad playerctl nh fzf bash bat just eza zoxide gcc swtpm
+    networkmanagerapplet yad playerctl nh fzf bash bat just eza zoxide gcc swtpm inotify-tools
   ];
 
   programs = {
