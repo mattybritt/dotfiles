@@ -9,8 +9,8 @@
     ];
 
   boot.initrd.availableKernelModules = [ "ahci" "xhci_pci" "nvme" "usbhid" ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  boot.kernelModules = [ "amdgpu" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
