@@ -40,7 +40,7 @@ in {
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
   cpuType = "intel";
-  gpuType = "intel";
+  gpuType = "amd";
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
   intel-bus-id = "PCI:1:0:0";
