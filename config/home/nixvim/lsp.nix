@@ -30,6 +30,29 @@
           installCargo = true;
           installRustc = true;
         };
+        tailwindcss = {
+          enable = true;
+          filetypes = ["html" "elixir" "eelixir" "heex"];
+
+# filetypes = { "html", "elixir", "eelixir", "heex" },
+#   init_options = {
+#     userLanguages = {
+#       elixir = "html-eex",
+#       eelixir = "html-eex",
+#       heex = "html-eex",
+#     },
+#   },
+#   settings = {
+#     tailwindCSS = {
+#       experimental = {
+#         classRegex = {
+#           'class[:]\\s*"([^"]*)"',
+#         },
+#       },
+#     },
+#   },
+
+      };
         templ = {enable = true;};
         tsserver = {enable = false;};
         yamlls = { enable = true; };
