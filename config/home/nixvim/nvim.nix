@@ -5,7 +5,6 @@
     ./conform.nix
     ./dap.nix
     ./db.nix
-    ./diffview.nix
     ./git.nix
     ./harpoon.nix
     ./keymaps.nix
