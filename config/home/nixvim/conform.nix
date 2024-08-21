@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   programs.nixvim.plugins.conform-nvim = {
     enable = true;
     formatOnSave = {
@@ -8,20 +6,20 @@
       lspFallback = true;
     };
     formattersByFt = {
-      "*" = [ "codespell" ];
-      "_" = [ "trim_whitespace" ];
-      go = [ "goimports" "golines" "gofmt" "gofumpt" ];
-      javascript =  [ "prettierd" ];
-      typescript =  [ "prettierd" ];
-      yaml =  [ "prettierd" ];
-      json = [ "jq" ];
-      lua = [ "stylua" ];
-      scss = [ "prettierd" ];
-      css = [ "prettierd" ];
-      python = [ "isort" "black" ];
-      rust = [ "rustfmt" ];
-      sh = [ "shfmt" ];
-      nix = [ "fmt" ];
+      "*" = ["codespell"];
+      "_" = ["trim_whitespace"];
+      go = ["goimports" "golines" "gofmt" "gofumpt"];
+      javascript = ["prettierd"];
+      typescript = ["prettierd"];
+      yaml = ["prettierd"];
+      json = ["jq"];
+      lua = ["stylua"];
+      scss = ["prettierd"];
+      css = ["prettierd"];
+      python = ["isort" "black"];
+      rust = ["rustfmt"];
+      sh = ["shfmt"];
+      nix = ["alejandra"];
     };
   };
 }

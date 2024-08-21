@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   imports = [
     ./conform.nix
     ./dap.nix
@@ -80,9 +78,9 @@
         vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
 
         vim.filetype.add({ extension = { templ = "templ" } })
-        '';
+      '';
 
-        extraPlugins = [];
+      extraPlugins = [];
     };
   };
 }
