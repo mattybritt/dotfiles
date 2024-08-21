@@ -1,6 +1,5 @@
-{ pkgs, ... }:
-  {
-    programs.tmux = {
+{pkgs, ...}: {
+  programs.tmux = {
     enable = true;
     aggressiveResize = true;
     clock24 = true;
@@ -70,6 +69,5 @@
 
       set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
     '';
-
   };
 }
