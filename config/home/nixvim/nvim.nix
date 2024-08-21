@@ -15,7 +15,6 @@
     ./telescope.nix
     ./treesitter.nix
     ./trouble.nix
-    ./twilight.nix
     ./vim-be-good.nix
     ./zenmode.nix
   ];
