@@ -15,6 +15,7 @@
     brightnessctl
     btop
     cmatrix
+    codespell # potentially remove?
     cowsay
     curl
     eza
@@ -27,6 +28,7 @@
     hugo
     inotify-tools
     just
+    jq
     libnotify
     libvirt
     lm_sensors
