@@ -1,15 +1,10 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{...}: {
   imports = [
     ./alacritty.nix
     ./files.nix
     ./fish.nix
     ./gtk-qt.nix
     ./hyprland.nix
-    ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
     ./nixvim/nvim.nix
