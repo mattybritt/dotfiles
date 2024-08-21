@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
-  # Starship Prompt
+{pkgs, ...}: {
   programs.starship = {
     enable = true;
     package = pkgs.starship;

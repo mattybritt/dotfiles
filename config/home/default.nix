@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./alacritty.nix
     ./files.nix
     ./fish.nix
     ./gtk-qt.nix
@@ -15,7 +14,6 @@
     ./swaync.nix
     ./tmux.nix
     ./waybar.nix
-    ./wezterm.nix
     ./wlogout.nix
     ./zeroad.nix
   ];
