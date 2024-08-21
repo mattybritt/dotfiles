@@ -6,7 +6,7 @@ in {
   hostname = "${setHostname}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/git/github/mattybritt/dotfiles";
-  wallpaperGit = "https://github.com/mattybritt/wallpapers.git"; 
+  wallpaperGit = "https://github.com/mattybritt/wallpapers.git";
   wallpaperDir = "/home/${setUsername}/Pictures/Wallpapers";
   screenshotDir = "/home/${setUsername}/Pictures/Screenshots";
 
@@ -42,7 +42,7 @@ in {
   cpuType = "intel";
   gpuType = "amd";
 
-  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
+  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
 
@@ -60,7 +60,7 @@ in {
 
   # Program Options
   browser = "brave"; # Install & Set Default Browser
-  terminal = "kitty";  # Set Default System Terminal
+  terminal = "kitty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   kdenlive = false;
@@ -78,8 +78,7 @@ in {
 
   # Enable Python & PyCharm
   python = false;
-  
+
   # Enable SyncThing
   syncthing = false;
-
 }
