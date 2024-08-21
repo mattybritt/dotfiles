@@ -9,60 +9,61 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    wget
-    curl
-    git
-    cmatrix
-    lolcat
-    neofetch
-    htop
-    btop
-    libvirt
-    polkit_gnome
-    lm_sensors
-    unzip
-    unrar
-    libnotify
-    eza
-    v4l-utils
-    ydotool
-    wl-clipboard
-    socat
-    cowsay
-    lshw
-    pkg-config
-    meson
-    hugo
-    gnumake
-    ninja
-    symbola
-    noto-fonts-color-emoji
-    material-icons
-    brightnessctl
-    toybox
-    virt-viewer
-    spice
-    spice-protocol
-    win-virtio
-    win-spice
-    swappy
-    ripgrep
+    alejandra
     appimage-run
-    networkmanagerapplet
-    yad
-    playerctl
-    nh
-    fzf
     bash
     bat
-    just
+    brightnessctl
+    btop
+    cmatrix
+    cowsay
+    curl
     eza
-    zoxide
+    eza
+    fzf
     gcc
-    swtpm
+    git
+    gnumake
+    htop
+    hugo
     inotify-tools
+    just
+    libnotify
+    libvirt
+    lm_sensors
+    lolcat
+    lshw
+    material-icons
+    meson
+    neofetch
+    networkmanagerapplet
+    nh
+    ninja
+    noto-fonts-color-emoji
+    pkg-config
+    playerctl
+    prettierd
+    polkit_gnome
+    ripgrep
+    socat
+    spice
+    spice-protocol
     sqlcmd
-    alejandra
+    swappy
+    swtpm
+    symbola
+    toybox
+    unrar
+    unzip
+    v4l-utils
+    virt-viewer
+    wget
+    win-spice
+    win-virtio
+    wl-clipboard
+    yad
+    ydotool
+    zoxide
   ];
 
   programs = {
