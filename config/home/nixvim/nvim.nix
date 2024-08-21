@@ -81,16 +81,6 @@
         vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
 
         vim.filetype.add({ extension = { templ = "templ" } })
-        
-        local autocomplete_group = vim.api.nvim_create_augroup('vimrc_autocompletion', { clear = true })
-        vim.api.nvim_create_autocmd('FileType', {
-          pattern = { 'sql', 'mysql', 'plsql' },
-          callback = function()
-            cmp.setup.buffer({ sources = { { name = 'vim-dadbod-completion' } } })
-          end,
-          group = autocomplete_group,
-        }) 
-
         '';
 
         extraPlugins = [
@@ -121,17 +111,7 @@
                hash = "sha256-+WQkYVopdw6eddhSyMqAvgD8V3De505jI6ruUzkPZt0=";
            };
          })
-          (pkgs.vimUtils.buildVimPlugin {
-          name = "vim-dadbod-completion";
-           src = pkgs.fetchFromGitHub {
-               owner = "kristijanhusak";
-               repo = "vim-dadbod-completion";
-               rev = "880f7e9";
-               hash = "sha256-kci8ksgSRPmRhwTYw7Ya1v4hwPjN4BLFjV6+6YiK1hA=";
-           };
-         })
        ];
-
     };
   };
 }
