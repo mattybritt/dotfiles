@@ -8,18 +8,19 @@
     formattersByFt = {
       "*" = ["codespell"];
       "_" = ["trim_whitespace"];
+      css = ["prettierd"];
+      elixir = ["mix"];
       go = ["goimports" "golines" "gofmt" "gofumpt"];
       javascript = ["prettierd"];
-      typescript = ["prettierd"];
-      yaml = ["prettierd"];
       json = ["jq"];
       lua = ["stylua"];
-      scss = ["prettierd"];
-      css = ["prettierd"];
+      nix = ["alejandra"];
       python = ["isort" "black"];
       rust = ["rustfmt"];
+      scss = ["prettierd"];
       sh = ["shfmt"];
-      nix = ["alejandra"];
+      typescript = ["prettierd"];
+      yaml = ["prettierd"];
     };
   };
 }

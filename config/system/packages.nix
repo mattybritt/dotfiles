@@ -41,9 +41,10 @@
     noto-fonts-color-emoji
     pkg-config
     playerctl
-    prettierd
     polkit_gnome
+    prettierd
     ripgrep
+    shfmt
     socat
     spice
     spice-protocol
