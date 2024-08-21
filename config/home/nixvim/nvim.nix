@@ -83,7 +83,8 @@
         vim.filetype.add({ extension = { templ = "templ" } })
         '';
 
-        extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
+        extraPlugins = [
+          (pkgs.vimUtils.buildVimPlugin {
           name = "vim-be-good";
            src = pkgs.fetchFromGitHub {
                owner = "mattybritt";
@@ -91,7 +92,17 @@
                rev = "4fa57b7";
                hash = "sha256-XVFq3Gb4C95Y0NYKk08ZjZaGLVF6ayPicIAccba+VRs=";
            };
-         })];
+         })
+          (pkgs.vimUtils.buildVimPlugin {
+          name = "vim-dadbod";
+           src = pkgs.fetchFromGitHub {
+               owner = "tpope";
+               repo = "vim-dadbod";
+               rev = "7888cb7";
+               hash = "sha256-8wnUSYctVn3JeCVz2fdi9qcKi8ZyA4To+xs4WaP6rog=";
+           };
+         })
+       ];
 
     };
   };
