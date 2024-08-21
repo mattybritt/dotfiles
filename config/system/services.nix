@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   # List services that you want to enable:
   services.openssh.enable = true;
   services.fstrim.enable = true;
@@ -45,7 +40,6 @@
     };
   };
   hardware.pulseaudio.enable = false;
-  # sound.enable = true;
   security.rtkit.enable = true;
   programs.thunar.enable = true;
   services.gvfs.enable = true;
