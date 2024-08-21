@@ -34,7 +34,6 @@ in {
     font-awesome
     spotify
     swayidle
-    vscode
     azuredatastudio
     bitwarden
     speedtest-cli
