@@ -63,7 +63,6 @@ in {
   terminal = "kitty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  kdenlive = false;
   enableZeroAD = false;
 
   # Enable Support For
