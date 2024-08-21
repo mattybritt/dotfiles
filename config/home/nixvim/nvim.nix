@@ -6,11 +6,10 @@
     ./dap.nix
     ./db.nix
     ./diffview.nix
-    ./gitsigns.nix
+    ./git.nix
     ./harpoon.nix
     ./keymaps.nix
     ./lsp.nix
-    ./neogit.nix
     ./nvim-cmp.nix
     ./nvim-tree.nix
     ./prettier.nix
