@@ -64,7 +64,6 @@ in {
   distrobox = false;
   flatpak = false;
   kdenlive = false;
-  blender = false;
   enableZeroAD = false;
 
   # Enable Support For
