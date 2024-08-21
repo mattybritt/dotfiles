@@ -2,7 +2,7 @@
   programs.nixvim = {
     plugins.dap = {
       enable = true;
-      extensions= {
+      extensions = {
         dap-ui.enable = true;
         dap-virtual-text.enable = true;
         dap-go.enable = true;
@@ -10,21 +10,21 @@
       };
     };
     keymaps = [
-        {
-          mode = "n";
-          key = "<leader>dt";
-          action = "<cmd>lua require('dapui').toggle()<CR>";
-        }
-        {
-          mode = "n";
-          key = "<leader>db";
-          action = "<cmd>DapToggleBreakpoint<CR>";
-        }
-        {
-          mode = "n";
-          key = "<leader>dc";
-          action = "<cmd>DapContinue<CR>";
-        }
+      {
+        mode = "n";
+        key = "<leader>dt";
+        action = "<cmd>lua require('dapui').toggle()<CR>";
+      }
+      {
+        mode = "n";
+        key = "<leader>db";
+        action = "<cmd>DapToggleBreakpoint<CR>";
+      }
+      {
+        mode = "n";
+        key = "<leader>dc";
+        action = "<cmd>DapContinue<CR>";
+      }
     ];
   };
 }

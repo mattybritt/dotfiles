@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   programs.nixvim.plugins = {
     lsp-format = {enable = true;};
     lsp = {
@@ -22,10 +20,10 @@
         html = {enable = true;};
         jsonls = {enable = true;};
         lua-ls = {enable = true;};
-        marksman = { enable = true; };
+        marksman = {enable = true;};
         nixd = {enable = true;};
-        omnisharp = { enable = true; };
-        rust-analyzer = { 
+        omnisharp = {enable = true;};
+        rust-analyzer = {
           enable = true;
           installCargo = true;
           installRustc = true;
@@ -34,28 +32,27 @@
           enable = true;
           filetypes = ["html" "elixir" "eelixir" "heex"];
 
-# filetypes = { "html", "elixir", "eelixir", "heex" },
-#   init_options = {
-#     userLanguages = {
-#       elixir = "html-eex",
-#       eelixir = "html-eex",
-#       heex = "html-eex",
-#     },
-#   },
-#   settings = {
-#     tailwindCSS = {
-#       experimental = {
-#         classRegex = {
-#           'class[:]\\s*"([^"]*)"',
-#         },
-#       },
-#     },
-#   },
-
-      };
+          # filetypes = { "html", "elixir", "eelixir", "heex" },
+          #   init_options = {
+          #     userLanguages = {
+          #       elixir = "html-eex",
+          #       eelixir = "html-eex",
+          #       heex = "html-eex",
+          #     },
+          #   },
+          #   settings = {
+          #     tailwindCSS = {
+          #       experimental = {
+          #         classRegex = {
+          #           'class[:]\\s*"([^"]*)"',
+          #         },
+          #       },
+          #     },
+          #   },
+        };
         templ = {enable = true;};
         tsserver = {enable = false;};
-        yamlls = { enable = true; };
+        yamlls = {enable = true;};
       };
       keymaps = {
         silent = true;

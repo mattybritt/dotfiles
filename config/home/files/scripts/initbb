@@ -3,30 +3,29 @@
 # Initialises a new bug bounty program
 
 function init() {
-  echo "Initing dir for $1"
+	echo "Initing dir for $1"
 
-  mkdir $1
-  cd $1
+	mkdir $1
+	cd $1
 
-  mkdir domains
-  mkdir downloads
-  mkdir github
-  mkdir notes
+	mkdir domains
+	mkdir downloads
+	mkdir github
+	mkdir notes
 
-  echo "$1 bounty program." > ./README.md
+	echo "$1 bounty program." >./README.md
 
-  git init
-  git branch -m main
-  git add -A
-  git commit -m "Initial commit"
+	git init
+	git branch -m main
+	git add -A
+	git commit -m "Initial commit"
 
-  echo "Please setup your git remote."
-  echo "Done"
+	echo "Please setup your git remote."
+	echo "Done"
 }
 
 if [ -z "$1" ]; then #no arguments provided
-  echo "Bounty name needed."
+	echo "Bounty name needed."
 else
-  init $1
+	init $1
 fi
-
