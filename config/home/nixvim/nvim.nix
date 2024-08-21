@@ -102,6 +102,24 @@
                hash = "sha256-8wnUSYctVn3JeCVz2fdi9qcKi8ZyA4To+xs4WaP6rog=";
            };
          })
+          (pkgs.vimUtils.buildVimPlugin {
+          name = "vim-dadbod-ui";
+           src = pkgs.fetchFromGitHub {
+               owner = "kristijanhusak";
+               repo = "vim-dadbod-ui";
+               rev = "0f51d8d";
+               hash = "sha256-+WQkYVopdw6eddhSyMqAvgD8V3De505jI6ruUzkPZt0=";
+           };
+         })
+          (pkgs.vimUtils.buildVimPlugin {
+          name = "vim-dadbod-completion";
+           src = pkgs.fetchFromGitHub {
+               owner = "kristijanhusak";
+               repo = "vim-dadbod-completion";
+               rev = "880f7e9";
+               hash = "sha256-kci8ksgSRPmRhwTYw7Ya1v4hwPjN4BLFjV6+6YiK1hA=";
+           };
+         })
        ];
 
     };
