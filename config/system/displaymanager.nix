@@ -1,5 +1,4 @@
-{ pkgs, config, host, ... }:
-{
+{pkgs, ...}: {
   services.xserver = {
     enable = true;
     libinput.enable = true;
@@ -11,11 +10,10 @@
     };
   };
 
-  environment.systemPackages =
-  let
-      tokyo-night = pkgs.libsForQt5.callPackage ../pkgs/sddm-tokyo-night.nix {};
+  environment.systemPackages = let
+    tokyo-night = pkgs.libsForQt5.callPackage ../pkgs/sddm-tokyo-night.nix {};
   in [
-      tokyo-night # Name: tokyo-night-sddm
-      pkgs.libsForQt5.qt5.qtgraphicaleffects
-    ];
+    tokyo-night # Name: tokyo-night-sddm
+    pkgs.libsForQt5.qt5.qtgraphicaleffects
+  ];
 }

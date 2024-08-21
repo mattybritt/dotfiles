@@ -1,10 +1,23 @@
-{ config, pkgs, inputs, username,
-  host, gtkThemeFromScheme, ... }:
-let 
-  inherit (import ./../../hosts/${host}/options.nix)
-    gitUsername gitEmail theme browser 
-    wallpaperDir wallpaperGit flakeDir 
-    waybarStyle;
+{
+  config,
+  pkgs,
+  inputs,
+  username,
+  host,
+  gtkThemeFromScheme,
+  ...
+}: let
+  inherit
+    (import ./../../hosts/${host}/options.nix)
+    gitUsername
+    gitEmail
+    theme
+    browser
+    wallpaperDir
+    wallpaperGit
+    flakeDir
+    waybarStyle
+    ;
 in {
   # Home Manager Settings
   home.username = "${username}";
@@ -37,8 +50,8 @@ in {
   # Create XDG Dirs
   xdg = {
     userDirs = {
-        enable = true;
-        createDirectories = true;
+      enable = true;
+      createDirectories = true;
     };
   };
 

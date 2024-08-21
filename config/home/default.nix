@@ -15,6 +15,5 @@
     ./tmux.nix
     ./waybar.nix
     ./wlogout.nix
-    ./zeroad.nix
   ];
 }
