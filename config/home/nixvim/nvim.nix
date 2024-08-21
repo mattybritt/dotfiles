@@ -81,6 +81,16 @@
         vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
 
         vim.filetype.add({ extension = { templ = "templ" } })
+        
+        local autocomplete_group = vim.api.nvim_create_augroup('vimrc_autocompletion', { clear = true })
+        vim.api.nvim_create_autocmd('FileType', {
+          pattern = { 'sql', 'mysql', 'plsql' },
+          callback = function()
+            cmp.setup.buffer({ sources = { { name = 'vim-dadbod-completion' } } })
+          end,
+          group = autocomplete_group,
+        }) 
+
         '';
 
         extraPlugins = [
