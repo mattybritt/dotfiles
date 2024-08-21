@@ -61,8 +61,6 @@ in {
   # Program Options
   browser = "brave"; # Install & Set Default Browser
   terminal = "kitty"; # Set Default System Terminal
-  distrobox = false;
-  flatpak = false;
 
   # Enable Support For
   # Logitech Devices
