@@ -23,6 +23,7 @@
     fzf
     gcc
     git
+    glow
     gnumake
     htop
     hugo

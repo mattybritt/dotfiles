@@ -195,7 +195,7 @@ in
                  bind = ${modifier},l,movefocus,r
                  bind = ${modifier_2},k,movefocus,u
                  bind = ${modifier_2},j,movefocus,d
-                 bind = ${modifier},k,exec,${terminal} tmux-sessionizer
+                 bind = ${modifier},k,exec,'kitty cheatsheet'
 
                  bind = ${modifier_2},1,workspace,1
                  bind = ${modifier_2},2,workspace,2

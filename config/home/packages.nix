@@ -48,6 +48,7 @@ in {
     (import ./../scripts/task-waybar.nix {inherit pkgs;})
     (import ./../scripts/squirtle.nix {inherit pkgs;})
     (import ./../scripts/cheatsheet.nix {inherit pkgs;})
+    (import ./../scripts/cheatsheet-launcher.nix {inherit pkgs;})
     (import ./../scripts/wallsetter.nix {
       inherit pkgs;
       inherit wallpaperDir;
