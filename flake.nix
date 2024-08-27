@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-wsl.url = "github:nix-community/nixos-wsl";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-colors.url = "github:misterio77/nix-colors";
@@ -18,7 +19,7 @@
     impermanence.url = "github:nix-community/impermanence";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, impermanence, ... }:
+  outputs = inputs@{ nixpkgs, nixos-wsl, home-manager, impermanence, ... }:
   let
     system = "x86_64-linux";
     host = "wsl";
@@ -51,7 +52,8 @@
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
 	    home-manager.users.${username} = import ./users/default/home.nix;
-	  }
+      }
+      nixos-wsl.nixosModules.wsl
 	];
       };
     };

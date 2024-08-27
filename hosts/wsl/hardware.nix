@@ -5,16 +5,12 @@
 # NixOS-WSL specific options are documented on the NixOS-WSL repository:
 # https://github.com/nix-community/NixOS-WSL
 
-{ config, lib, pkgs, ... }:
+{ lib,... }:
 
 {
-  imports = [
-    # include NixOS-WSL modules
-    <nixos-wsl/modules>
-  ];
-
   wsl.enable = true;
   wsl.defaultUser = "matt";
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";  
 
   # This value determines the NixOS release from which the default
