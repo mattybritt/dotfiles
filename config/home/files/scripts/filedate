@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+#gets a date that can be used in a file name
+
+date +%4Y_%m_%d

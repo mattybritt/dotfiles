@@ -1,23 +1,77 @@
-{ pkgs, config, inputs, ... }:
-
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    wget curl git cmatrix lolcat neofetch htop btop libvirt
-    polkit_gnome lm_sensors unzip unrar libnotify eza
-    v4l-utils ydotool wl-clipboard socat cowsay lshw
-    pkg-config meson hugo gnumake ninja go nodejs symbola
-    noto-fonts-color-emoji material-icons brightnessctl
-    toybox virt-viewer swappy ripgrep appimage-run
-    networkmanagerapplet yad playerctl nh fzf bash bat just eza zoxide
+    alejandra
+    appimage-run
+    bash
+    bat
+    brightnessctl
+    btop
+    cmatrix
+    codespell # potentially remove?
+    cowsay
+    curl
+    eza
+    eza
+    fzf
+    gcc
+    git
+    glow
+    gnumake
+    htop
+    hugo
+    inotify-tools
+    just
+    jq
+    libnotify
+    libvirt
+    lm_sensors
+    lolcat
+    lshw
+    material-icons
+    meson
+    neofetch
+    networkmanagerapplet
+    nh
+    ninja
+    noto-fonts-color-emoji
+    pkg-config
+    playerctl
+    polkit_gnome
+    prettierd
+    ripgrep
+    shfmt
+    socat
+    spice
+    spice-protocol
+    sqlcmd
+    swappy
+    swtpm
+    symbola
+    toybox
+    unrar
+    unzip
+    v4l-utils
+    virt-viewer
+    wget
+    win-spice
+    win-virtio
+    wl-clipboard
+    yad
+    ydotool
+    zoxide
   ];
 
   programs = {
     dconf.enable = true;
-    seahorse.enable=true;
+    seahorse.enable = true;
     hyprland = {
       enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
@@ -32,5 +86,22 @@
     virt-manager.enable = true;
   };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [
+          (pkgs.OVMFFull.override {
+            secureBoot = true;
+            tpmSupport = true;
+          })
+          .fd
+        ];
+      };
+    };
+  };
 }

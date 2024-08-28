@@ -1,6 +1,5 @@
-{ pkgs, ... }:
-  {
-    programs.tmux = {
+{pkgs, ...}: {
+  programs.tmux = {
     enable = true;
     aggressiveResize = true;
     clock24 = true;
@@ -54,7 +53,7 @@
       bind-key x kill-pane
       bind-key & kill-window
 
-      bind-key -r D run-shell "~/scripts/tmux-sessionizer ~/git/github/mattybritt/dot"
+      bind-key -r D run-shell "~/.scripts/tmux-sessionizer"
 
       set -g @catppuccin_window_right_separator "█ "
       set -g @catppuccin_window_number_position "right"
@@ -70,6 +69,5 @@
 
       set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
     '';
-
   };
 }

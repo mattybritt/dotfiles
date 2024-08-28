@@ -1,16 +1,12 @@
-{ pkgs, config, ... }:
-
-{
+{...}: {
   imports = [
-    # Enable &/ Configure Programs
-    ./nixvim/nvim.nix
-    ./alacritty.nix
+    ./files.nix
     ./fish.nix
     ./gtk-qt.nix
     ./hyprland.nix
-    ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
+    ./nixvim/nvim.nix
     ./packages.nix
     ./rofi.nix
     ./starship.nix
@@ -18,11 +14,6 @@
     ./swaync.nix
     ./tmux.nix
     ./waybar.nix
-    ./wezterm.nix
     ./wlogout.nix
-    ./zeroad.nix
-
-    # Place Home Files Like Pictures
-    ./files.nix
   ];
 }

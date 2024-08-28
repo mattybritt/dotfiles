@@ -6,7 +6,7 @@ in {
   hostname = "${setHostname}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/git/github/mattybritt/dotfiles";
-  wallpaperGit = "https://github.com/mattybritt/wallpapers.git"; 
+  wallpaperGit = "https://github.com/mattybritt/wallpapers.git";
   wallpaperDir = "/home/${setUsername}/Pictures/Wallpapers";
   screenshotDir = "/home/${setUsername}/Pictures/Screenshots";
 
@@ -18,8 +18,8 @@ in {
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
   extraMonitorSettings = "
-    monitor=DP-1,3840x2160@60,0x0,1
-    monitor=HDMI-A-1,3840x2160@60,3840x0,1
+    monitor=HDMI-A-1,3840x2160@60,0x0,1
+    monitor=DP-1,3840x2160@60,3840x0,1
   ";
 
   # Waybar Settings
@@ -36,13 +36,13 @@ in {
   theTimezone = "Africa/Johannesburg";
   theShell = "fish";
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
-  sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
+  sdl-videodriver = "wayland"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
   cpuType = "intel";
-  gpuType = "intel";
+  gpuType = "amd";
 
-  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
+  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
 
@@ -59,27 +59,18 @@ in {
   printer = false;
 
   # Program Options
-  browser = "firefox"; # Install & Set Default Browser
-  terminal = "kitty";  # Set Default System Terminal
-  distrobox = false;
-  flatpak = false;
-  kdenlive = false;
-  blender = false;
-  enableZeroAD = false;
+  browser = "brave"; # Install & Set Default Browser
+  terminal = "kitty"; # Set Default System Terminal
 
   # Enable Support For
   # Logitech Devices
   logitech = false;
 
-  # Enable Terminals ( If You Disable All You Get Kitty )
-  wezterm = false;
-  alacritty = false;
   kitty = true;
 
   # Enable Python & PyCharm
   python = false;
-  
+
   # Enable SyncThing
   syncthing = false;
-
 }

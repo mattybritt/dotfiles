@@ -1,6 +1,4 @@
-{ pkgs, config, ... }:
-
-let
+{config, ...}: let
   palette = config.colorScheme.palette;
 in {
   home.file.".config/rofi/config.rasi".text = ''
@@ -16,14 +14,14 @@ in {
       show-icons:	    true;
       icon-theme:	    "Papirus";
       location:		    0;
-      font:		    "JetBrains Nerd Font 16";	
+      font:		    "JetBrains Nerd Font 16";
       drun-display-format:  "{icon} {name}";
       display-drun:	    "   Apps ";
       display-run:	    "   Run ";
       display-filebrowser:  "   File ";
     }
 
-    window { 
+    window {
       width: 45%;
       transparency: "real";
       orientation: vertical;
@@ -72,7 +70,7 @@ in {
       border: 0 10 6 10;
     }
 
-    // INPUT BAR 
+    // INPUT BAR
     //------------------------------------------------
 
     entry {
@@ -84,7 +82,7 @@ in {
     inputbar {
       padding: 0 0 0 0;
       margin: 0 0 0 0;
-    } 
+    }
 
     prompt {
       text-color: #${palette.base0D};
@@ -104,7 +102,7 @@ in {
       padding:	      10px;
       background-color: @bg;
       text-color:	      #${palette.base01};
-      vertical-align:   0.5; 
+      vertical-align:   0.5;
       horizontal-align: 0.5;
     }
 

@@ -1,27 +1,58 @@
-{ ... }:
-
-{
+{...}: {
   programs.nixvim.plugins = {
     lsp-format = {enable = true;};
     lsp = {
       enable = true;
       servers = {
+        cssls = {
+          enable = true;
+          settings = {
+            css = {
+              lint = {
+                unknownAtRules = "ignore";
+              };
+            };
+          };
+        };
+        elixirls = {enable = true;};
         eslint = {enable = true;};
-        cssls = {enable = true;};
-        jsonls = {enable = true;};
-        nixd = {enable = true;};
-        html = {enable = true;};
-        lua-ls = {enable = true;};
         gopls = {enable = true;};
-        tsserver = {enable = false;};
-        yamlls = { enable = true; };
-        omnisharp = { enable = true; };
-        marksman = { enable = true; };
-        rust-analyzer = { 
+        html = {enable = true;};
+        jsonls = {enable = true;};
+        lua-ls = {enable = true;};
+        marksman = {enable = true;};
+        nixd = {enable = true;};
+        omnisharp = {enable = true;};
+        rust-analyzer = {
           enable = true;
           installCargo = true;
           installRustc = true;
         };
+        tailwindcss = {
+          enable = true;
+          filetypes = ["html" "elixir" "eelixir" "heex"];
+
+          # filetypes = { "html", "elixir", "eelixir", "heex" },
+          #   init_options = {
+          #     userLanguages = {
+          #       elixir = "html-eex",
+          #       eelixir = "html-eex",
+          #       heex = "html-eex",
+          #     },
+          #   },
+          #   settings = {
+          #     tailwindCSS = {
+          #       experimental = {
+          #         classRegex = {
+          #           'class[:]\\s*"([^"]*)"',
+          #         },
+          #       },
+          #     },
+          #   },
+        };
+        templ = {enable = true;};
+        tsserver = {enable = false;};
+        yamlls = {enable = true;};
       };
       keymaps = {
         silent = true;
@@ -62,7 +93,7 @@
             action = "code_action";
             desc = "Code Action";
           };
-          "<leader>f" = {
+          "<leader>cf" = {
             action = "format";
             desc = "Format";
           };

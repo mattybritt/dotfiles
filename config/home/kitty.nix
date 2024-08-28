@@ -1,11 +1,10 @@
-{ pkgs, config, lib, host, ... }:
-
-let
+{
+  pkgs,
+  config,
+  ...
+}: let
   palette = config.colorScheme.palette;
-  inherit (import ../../hosts/${host}/options.nix) alacritty wezterm kitty;
-in lib.mkIf (wezterm == false && alacritty == false
-	     || kitty == true) {
-  # Configure Kitty
+in {
   programs.kitty = {
     enable = true;
     package = pkgs.kitty;

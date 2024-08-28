@@ -1,19 +1,31 @@
-{ inputs, config, pkgs,
-  username, hostname, host, ... }:
-
-let 
-  inherit (import ./hosts/${host}/options.nix) 
-    theLocale theTimezone gitUsername
-    theShell wallpaperDir wallpaperGit
-    theLCVariables theKBDLayout flakeDir
-    theme;
+{
+  inputs,
+  config,
+  pkgs,
+  username,
+  hostname,
+  host,
+  ...
+}: let
+  inherit
+    (import ./hosts/${host}/options.nix)
+    theLocale
+    theTimezone
+    gitUsername
+    theShell
+    wallpaperDir
+    wallpaperGit
+    theLCVariables
+    theKBDLayout
+    flakeDir
+    theme
+    ;
 in {
-  imports =
-    [
-      ./hosts/${host}/hardware.nix
-      ./config/system
-      ./users/users.nix
-    ];
+  imports = [
+    ./hosts/${host}/hardware.nix
+    ./config/system
+    ./users/users.nix
+  ];
 
   # Enable networking
   networking.hostName = "${hostname}"; # Define your hostname
@@ -38,10 +50,6 @@ in {
 
   console.keyMap = "${theKBDLayout}";
 
-   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "${username}" ];
-
   # Define a user account.
   users = {
     mutableUsers = true;
@@ -50,13 +58,14 @@ in {
   environment.variables = {
     FLAKE = "${flakeDir}";
     POLKIT_BIN = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+    NIXOS_OZONE_WL = "1";
   };
 
   # Optimization settings and garbage collection automation
   nix = {
     settings = {
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = ["nix-command" "flakes"];
       substituters = ["https://hyprland.cachix.org"];
       trusted-public-keys = [
         "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="

@@ -1,23 +1,19 @@
-{ pkgs, ... }:
-
-{
+{...}: {
   imports = [
     ./conform.nix
     ./dap.nix
-    # ./dashboard.nix seems broken for some reason
-    ./diffview.nix
-    ./gitsigns.nix
+    ./db.nix
+    ./git.nix
     ./harpoon.nix
     ./keymaps.nix
     ./lsp.nix
-    ./neogit.nix
     ./nvim-cmp.nix
     ./nvim-tree.nix
     ./prettier.nix
     ./telescope.nix
     ./treesitter.nix
     ./trouble.nix
-    ./twilight.nix
+    ./vim-be-good.nix
     ./zenmode.nix
   ];
   programs = {
@@ -50,18 +46,14 @@
       plugins = {
         copilot-vim.enable = true; #copilot support for vim
         lspkind.enable = true; #Pictograms to neovim built-in lsp
-        lsp-lines = { #lsp prompt lines
-          enable = true;
-        };
         lualine.enable = true; #footer line
         luasnip.enable = true; #snippets
         nix.enable = true; # support nix expressions
+        nvim-autopairs.enable = true; #bracket pairing
         nvim-colorizer.enable = true; #hex colours
         rust-tools.enable = true; # rust tooling
-        undotree.enable = true; #undo kak
-        nvim-autopairs.enable = true; #bracket pairing
         ts-autotag.enable = true; #autotags
-        which-key.enable = true;
+        undotree.enable = true; #undo kak
       };
 
       colorschemes.catppuccin = {
@@ -84,7 +76,11 @@
 
         vim.cmd('hi NormalNC guibg=NONE ctermbg=NONE')
         vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
-        '';
+
+        vim.filetype.add({ extension = { templ = "templ" } })
+      '';
+
+      extraPlugins = [];
     };
   };
 }

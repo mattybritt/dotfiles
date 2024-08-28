@@ -1,19 +1,21 @@
-{ lib, qtbase, qtsvg
-, qtgraphicaleffects
-, qtquickcontrols2
-, wrapQtAppsHook
-, stdenvNoCC
-, fetchFromGitHub
+{
+  qtbase,
+  qtsvg,
+  qtgraphicaleffects,
+  qtquickcontrols2,
+  wrapQtAppsHook,
+  stdenvNoCC,
+  fetchFromGitHub,
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "tokyo-night-sddm";
   version = "1..0";
   dontBuild = true;
   src = fetchFromGitHub {
-    owner = "rototrash";
+    owner = "mattybritt";
     repo = "tokyo-night-sddm";
-    rev = "320c8e74ade1e94f640708eee0b9a75a395697c6";
-    sha256 = "sha256-JRVVzyefqR2L3UrEK2iWyhUKfPMUNUnfRZmwdz05wL0=";
+    rev = "befaf46";
+    sha256 = "sha256-ADA83M9TwKzf66Dr4cBn78XxmAELiYqKjs/nGdAer8U=";
   };
   nativeBuildInputs = [
     wrapQtAppsHook
