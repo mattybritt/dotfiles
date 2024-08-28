@@ -23,25 +23,14 @@ in {
     slurp
     gnome.file-roller
     swaynotificationcenter
-    rofi-wayland
     imv
     transmission-gtk
     mpv
-    audacity
-    pavucontrol
     tree
     protonup-qt
     font-awesome
-    spotify
     swayidle
-    azuredatastudio
-    bitwarden
-    speedtest-cli
-    tmuxifier
-    zathura
     gammastep
-    burpsuite
-    firefox
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})
