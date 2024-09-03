@@ -23,6 +23,7 @@
     fzf
     gcc
     git
+    gitui
     glow
     gnumake
     htop

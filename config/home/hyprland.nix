@@ -144,6 +144,7 @@ in
                  exec-once = waybar
                  exec-once = swaync
                  exec-once = wallsetter
+                 exec-once = cheatsheet-launcher
                  exec-once = nm-applet --indicator
                  exec-once = swayidle -w timeout 720 'swaylock -f' timeout 800 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on' before-sleep 'swaylock -f -c 000000'
                  dwindle {
@@ -161,6 +162,14 @@ in
                  workspace = 4, monitor:${monitor1}
                  workspace = 5, monitor:${monitor1}
                  workspace = 6, monitor:${monitor1}
+
+                 $scratchpadsize = size 80% 85%
+
+                 $scratch_term = title:^(CheatSheet)$
+                 windowrulev2 = float,$scratch_term
+                 windowrulev2 = $scratchpadsize,$scratch_term
+                 windowrulev2 = workspace special:scratch_term ,$scratch_term
+                 windowrulev2 = center,$scratch_term
 
                  bind = ${modifier},Return,exec,${terminal}
                  bind = ${modifier},D,exec,rofi-launcher
@@ -195,7 +204,6 @@ in
                  bind = ${modifier},l,movefocus,r
                  bind = ${modifier_2},k,movefocus,u
                  bind = ${modifier_2},j,movefocus,d
-                 bind = ${modifier},k,exec,'kitty cheatsheet'
 
                  bind = ${modifier_2},1,workspace,1
                  bind = ${modifier_2},2,workspace,2
@@ -205,7 +213,6 @@ in
                  bind = ${modifier},7,workspace,5
                  bind = ${modifier},8,workspace,6
 
-                 bind = ${modifier}SHIFT,SPACE,movetoworkspace,special
                  bind = ${modifier},SPACE,togglespecialworkspace
                  bind = ${modifier_2}SHIFT,1,movetoworkspace,1
                  bind = ${modifier_2}SHIFT,2,movetoworkspace,2

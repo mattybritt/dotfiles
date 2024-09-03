@@ -61,6 +61,7 @@ in {
       inactive_tab_background #${palette.base08}
       inactive_tab_font_style bold
       tab_bar_background #${palette.base00}
+      allow_remote_control yes
     '';
   };
 }
