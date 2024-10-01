@@ -1,10 +1,6 @@
 {...}: {
   programs.nixvim.plugins.conform-nvim = {
     enable = true;
-    formatOnSave = {
-      timeoutMs = 500;
-      lspFallback = true;
-    };
     formattersByFt = {
       "*" = ["codespell"];
       "_" = ["trim_whitespace"];
