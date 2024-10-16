@@ -35,12 +35,10 @@ in {
     spotify
     swayidle
     azuredatastudio
-    bitwarden
     speedtest-cli
     tmuxifier
     zathura
     gammastep
-    burpsuite
     firefox
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
     # Import Scripts
