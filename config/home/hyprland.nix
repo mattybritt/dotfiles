@@ -151,9 +151,6 @@ in
                    pseudotile = true
                    preserve_split = true
                  }
-                 master {
-                   new_is_master = true
-                 }
 
                  workspace = 1, monitor:${monitor2}
                  workspace = 2, monitor:${monitor2}
