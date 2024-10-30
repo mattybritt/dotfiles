@@ -68,6 +68,7 @@
     yad
     ydotool
     zoxide
+    zed-editor
   ];
 
   programs = {
