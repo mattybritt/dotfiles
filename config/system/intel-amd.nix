@@ -15,16 +15,16 @@ in
     };
 
     # OpenGL
-    # hardware.opengl = {
-    #   extraPackages = with pkgs; [
-    #     intel-media-driver
-    #     vaapiIntel
-    #     vaapiVdpau
-    #     libvdpau-va-gl
-    #     amdvlk
-    #   ];
-    #   extraPackages32 = [pkgs.driversi686Linux.amdvlk];
-    # };
+    hardware.opengl = {
+      extraPackages = with pkgs; [
+        intel-media-driver
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
+        amdvlk
+      ];
+      extraPackages32 = [pkgs.driversi686Linux.amdvlk];
+    };
 
     systemd.tmpfiles.rules = [
       "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
