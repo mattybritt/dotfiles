@@ -29,8 +29,8 @@
     htop
     hugo
     inotify-tools
-    just
     jq
+    just
     libnotify
     libvirt
     lm_sensors
@@ -48,6 +48,8 @@
     polkit_gnome
     prettierd
     ripgrep
+    rtx
+    rustup
     shfmt
     socat
     spice
@@ -67,9 +69,8 @@
     wl-clipboard
     yad
     ydotool
-    zoxide
     zed-editor
-    rtx
+    zoxide
   ];
 
   programs = {
