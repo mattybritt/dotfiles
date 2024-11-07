@@ -49,7 +49,6 @@
     prettierd
     ripgrep
     rtx
-    rustup
     shfmt
     socat
     spice
