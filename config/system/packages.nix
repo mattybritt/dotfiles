@@ -69,6 +69,7 @@
     ydotool
     zoxide
     zed-editor
+    rtx
   ];
 
   programs = {
