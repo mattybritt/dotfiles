@@ -49,6 +49,7 @@
     prettierd
     ripgrep
     rtx
+    sass
     shfmt
     socat
     spice

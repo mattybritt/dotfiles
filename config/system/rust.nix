@@ -1,11 +1,10 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    rustc
-    cargo
-    cargo-watch
-    dioxus-cli
+    rustup
     bacon
-    rustfmt
+    cargo-generate
+    cargo-leptos
+    leptosfmt
   ];
 }
