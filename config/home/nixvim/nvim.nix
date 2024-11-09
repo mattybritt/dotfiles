@@ -51,7 +51,7 @@
         nix.enable = true; # support nix expressions
         nvim-autopairs.enable = true; #bracket pairing
         nvim-colorizer.enable = true; #hex colours
-        rustaceanvim.enable = true; # rust tooling
+        rust-tools.enable = true; # rust tooling
         ts-autotag.enable = true; #autotags
         undotree.enable = true; #undo kak
       };

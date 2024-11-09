@@ -23,7 +23,9 @@
         marksman = {enable = true;};
         nixd = {enable = true;};
         omnisharp = {enable = true;};
-        #rust-analyzer installed with rustaceanvim
+        rust-analyzer = {
+          enable = true;
+        };
         tailwindcss = {
           enable = true;
           filetypes = ["html" "elixir" "eelixir" "heex"];
