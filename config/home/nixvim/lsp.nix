@@ -23,9 +23,21 @@
         marksman = {enable = true;};
         nixd = {enable = true;};
         omnisharp = {enable = true;};
-        rust-analyzer = {
-          enable = true;
-        };
+        # rust-analyzer = {
+        #   enable = true;
+        #   installCargo = true;
+        #   installRustc = true;
+        #   settings = {
+        #     check = {
+        #       features = "all";
+        #       allFeatures = true;
+        #     };
+        #     cargo = {
+        #       features = "all";
+        #       allFeatures = true;
+        #     };
+        #   };
+        # };
         tailwindcss = {
           enable = true;
           filetypes = ["html" "elixir" "eelixir" "heex"];

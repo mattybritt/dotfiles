@@ -51,7 +51,32 @@
         nix.enable = true; # support nix expressions
         nvim-autopairs.enable = true; #bracket pairing
         nvim-colorizer.enable = true; #hex colours
-        rust-tools.enable = true; # rust tooling
+        rustaceanvim = {
+          enable = true;
+          settings = {
+            server = {
+              default_settings = {
+                rust-analyzer = {
+                  installCargo = false;
+                  installRustc = false;
+                  cargo = {
+                    allFeatures = true;
+                    features = "all";
+                  };
+                  check = {
+                    command = "clippy";
+                  };
+                  inlayHints = {
+                    lifetimeElisionHints = {
+                      enable = "always";
+                    };
+                  };
+                };
+              };
+              standalone = false;
+            };
+          };
+        };
         ts-autotag.enable = true; #autotags
         undotree.enable = true; #undo kak
       };
