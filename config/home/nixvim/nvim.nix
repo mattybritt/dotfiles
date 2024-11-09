@@ -64,16 +64,11 @@
                     features = "all";
                   };
                   check = {
+                    allFeatures = true;
                     command = "clippy";
-                  };
-                  inlayHints = {
-                    lifetimeElisionHints = {
-                      enable = "always";
-                    };
                   };
                 };
               };
-              standalone = false;
             };
           };
         };
