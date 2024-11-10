@@ -35,7 +35,7 @@ in {
   theLCVariables = "en_ZA.UTF-8";
   theTimezone = "Africa/Johannesburg";
   theShell = "fish";
-  theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
+  theKernel = "latest"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "wayland"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
