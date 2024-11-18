@@ -18,6 +18,7 @@
     codespell # potentially remove?
     cowsay
     curl
+    dotnet-sdk_8
     eza
     eza
     fzf
