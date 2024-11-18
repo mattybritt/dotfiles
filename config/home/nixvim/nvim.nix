@@ -1,4 +1,4 @@
-{...}: {
+{pkgs,...}: {
   imports = [
     ./conform.nix
     ./dap.nix
@@ -100,7 +100,7 @@
         vim.filetype.add({ extension = { templ = "templ" } })
       '';
 
-      extraPlugins = [];
+      extraPlugins = [pkgs.vimPlugins.Ionide-vim];
     };
   };
 }
