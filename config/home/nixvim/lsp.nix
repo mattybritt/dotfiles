@@ -24,42 +24,9 @@
         marksman = {enable = true;};
         nixd = {enable = true;};
         omnisharp = {enable = true;};
-        # rust-analyzer = {
-        #   enable = true;
-        #   installCargo = true;
-        #   installRustc = true;
-        #   settings = {
-        #     check = {
-        #       features = "all";
-        #       allFeatures = true;
-        #     };
-        #     cargo = {
-        #       features = "all";
-        #       allFeatures = true;
-        #     };
-        #   };
-        # };
         tailwindcss = {
           enable = true;
           filetypes = ["html" "elixir" "eelixir" "heex"];
-
-          # filetypes = { "html", "elixir", "eelixir", "heex" },
-          #   init_options = {
-          #     userLanguages = {
-          #       elixir = "html-eex",
-          #       eelixir = "html-eex",
-          #       heex = "html-eex",
-          #     },
-          #   },
-          #   settings = {
-          #     tailwindCSS = {
-          #       experimental = {
-          #         classRegex = {
-          #           'class[:]\\s*"([^"]*)"',
-          #         },
-          #       },
-          #     },
-          #   },
         };
         templ = {enable = true;};
         tsserver = {enable = false;};
