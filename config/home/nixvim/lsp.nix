@@ -16,6 +16,7 @@
         };
         elixirls = {enable = true;};
         eslint = {enable = true;};
+        fsautocomplete = {enable = true; };
         gopls = {enable = true;};
         html = {enable = true;};
         jsonls = {enable = true;};
