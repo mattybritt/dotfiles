@@ -21,7 +21,7 @@ in {
     swww
     grim
     slurp
-    gnome.file-roller
+    file-roller
     swaynotificationcenter
     rofi-wayland
     imv
@@ -40,7 +40,7 @@ in {
     zathura
     gammastep
     firefox
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    nerd-fonts.jetbrains-mono
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})
     (import ./../scripts/task-waybar.nix {inherit pkgs;})
