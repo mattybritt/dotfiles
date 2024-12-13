@@ -14,6 +14,8 @@
         export TERMCMD="kitty --single-instance"
         export DIRENV_LOG_FORMAT=""
 
+        export NVM_DIR="$HOME/.nvm"
+
         export GPG_TTY=(tty)
 
         set -x -U LESS_TERMCAP_md (printf "\e[01;31m")

@@ -18,6 +18,8 @@
     codespell # potentially remove?
     cowsay
     curl
+    # dotnet-aspnetcore_8
+    dotnet-sdk_8
     eza
     eza
     fzf
@@ -28,8 +30,8 @@
     htop
     hugo
     inotify-tools
-    just
     jq
+    just
     libnotify
     libvirt
     lm_sensors
