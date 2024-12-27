@@ -7,12 +7,14 @@
 
       gitsigns = {
         enable = true;
-        signs = {
-          add = {text = "+";};
-          change = {text = "~";};
-          topdelete = {text = "_";};
-          changedelete = {text = "~";};
-          untracked = {text = "┆";};
+        settings = {
+          signs = {
+            add = {text = "+";};
+            change = {text = "~";};
+            topdelete = {text = "_";};
+            changedelete = {text = "~";};
+            untracked = {text = "┆";};
+          };
         };
       };
 

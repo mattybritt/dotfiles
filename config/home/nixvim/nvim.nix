@@ -50,7 +50,8 @@
         luasnip.enable = true; #snippets
         nix.enable = true; # support nix expressions
         nvim-autopairs.enable = true; #bracket pairing
-        nvim-colorizer.enable = true; #hex colours
+        colorizer.enable = true; #hex colours
+        web-devicons.enable = true;
         rustaceanvim = {
           enable = true;
           settings = {
