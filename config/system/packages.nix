@@ -29,6 +29,7 @@
     eza
     eza
     fzf
+    flyctl
     gcc
     git
     gitui
