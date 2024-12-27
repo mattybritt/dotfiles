@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   programs.nixvim.plugins = {
     lsp-format = {enable = true;};
     lsp = {
@@ -14,7 +14,10 @@
             };
           };
         };
-        elixirls = {enable = true;};
+        elixirls = { 
+          enable = true;
+          cmd = ["${pkgs.beam.packages.erlang.elixir-ls}/bin/elixir-ls"];
+        };
         eslint = {enable = true;};
         fsautocomplete = {enable = true; };
         gopls = {enable = true;};
