@@ -14,9 +14,10 @@
             };
           };
         };
+        erlangls = {enable = true;};
         elixirls = { 
           enable = true;
-          cmd = ["${pkgs.beam.packages.erlang.elixir-ls}/bin/elixir-ls"];
+          cmd = ["${pkgs.beam.packages.erlang.elixir-ls}/lib/language_server.sh"];
         };
         eslint = {enable = true;};
         fsautocomplete = {enable = true; };
