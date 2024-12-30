@@ -25,7 +25,6 @@ in {
     swaynotificationcenter
     rofi-wayland
     imv
-    transmission_3-gtk
     mpv
     audacity
     pavucontrol
