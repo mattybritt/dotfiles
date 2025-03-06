@@ -44,7 +44,7 @@
       };
 
       plugins = {
-        copilot-vim.enable = true; #copilot support for vim
+        # copilot-vim.enable = true; #copilot support for vim
         lspkind.enable = true; #Pictograms to neovim built-in lsp
         lualine.enable = true; #footer line
         luasnip.enable = true; #snippets
