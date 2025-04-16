@@ -4,7 +4,6 @@
     ./dap.nix
     ./db.nix
     ./git.nix
-    ./harpoon.nix
     ./keymaps.nix
     ./lsp.nix
     ./nvim-cmp.nix
