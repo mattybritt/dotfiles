@@ -34,8 +34,7 @@ in
       extraConfig = let
         modifier = "MOD1";
         modifier_2 = "MOD4";
-        monitor1 = "DP-1";
-        monitor2 = "HDMI-A-1";
+        monitor1 = "HDMI-A-1";
       in
         concatStrings [
           ''
@@ -152,13 +151,10 @@ in
                    preserve_split = true
                  }
 
-                 workspace = 1, monitor:${monitor2}
-                 workspace = 2, monitor:${monitor2}
-                 workspace = 3, monitor:${monitor2}
-
+                 workspace = 1, monitor:${monitor1}
+                 workspace = 2, monitor:${monitor1}
+                 workspace = 3, monitor:${monitor1}
                  workspace = 4, monitor:${monitor1}
-                 workspace = 5, monitor:${monitor1}
-                 workspace = 6, monitor:${monitor1}
 
                  $scratchpadsize = size 80% 85%
 
@@ -202,22 +198,17 @@ in
                  bind = ${modifier_2},k,movefocus,u
                  bind = ${modifier_2},j,movefocus,d
 
-                 bind = ${modifier_2},1,workspace,1
-                 bind = ${modifier_2},2,workspace,2
-                 bind = ${modifier_2},3,workspace,3
-
-                 bind = ${modifier},6,workspace,4
-                 bind = ${modifier},7,workspace,5
-                 bind = ${modifier},8,workspace,6
+                 bind = ${modifier},6,workspace,1
+                 bind = ${modifier},7,workspace,2
+                 bind = ${modifier},8,workspace,3
+                 bind = ${modifier},9,workspace,4
 
                  bind = ${modifier},SPACE,togglespecialworkspace
-                 bind = ${modifier_2}SHIFT,1,movetoworkspace,1
-                 bind = ${modifier_2}SHIFT,2,movetoworkspace,2
-                 bind = ${modifier_2}SHIFT,3,movetoworkspace,3
 
-                 bind = ${modifier}SHIFT,6,movetoworkspace,4
-                 bind = ${modifier}SHIFT,7,movetoworkspace,5
-                 bind = ${modifier}SHIFT,8,movetoworkspace,6
+                 bind = ${modifier}SHIFT,6,movetoworkspace,1
+                 bind = ${modifier}SHIFT,7,movetoworkspace,2
+                 bind = ${modifier}SHIFT,8,movetoworkspace,3
+                 bind = ${modifier}SHIFT,9,movetoworkspace,4
 
                  bind = ${modifier}CONTROL,right,workspace,e+1
                  bind = ${modifier}CONTROL,left,workspace,e-1
