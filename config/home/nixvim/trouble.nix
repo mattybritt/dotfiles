@@ -7,7 +7,7 @@
       {
         mode = "n";
         key = "<leader>xx";
-        action = "<cmd>TroubleToggle<cr>";
+        action = "<cmd>Trouble diagnostics<cr>";
       }
       {
         mode = "n";
