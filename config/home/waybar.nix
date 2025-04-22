@@ -21,7 +21,7 @@ in
 
           modules-center = ["hyprland/workspaces"];
           modules-left = ["custom/startmenu" "hyprland/window" "pulseaudio" "cpu" "memory"];
-          modules-right = ["custom/exit" "idle_inhibitor" "custom/notification" "clock" "tray"];
+          modules-right = ["custom/exit" "idle_inhibitor" "custom/notification" "clock" "tray" "battery"];
 
           "hyprland/workspaces" = {
             format = "{icon}";
@@ -48,7 +48,19 @@ in
             tooltip = true;
             tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
           };
-          "hyprland/window" = {
+          "battery" = {
+            states = {
+              warning = 30;
+              critical = 15;
+            };
+            format = "{icon} {capacity}%";
+            format-charging = "󰂄 {capacity}%";
+            format-plugged = "󱘖 {capacity}%";
+            format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
+            on-click = "";
+            tooltip = false;
+          };
+         "hyprland/window" = {
             max-length = 25;
             separate-outputs = false;
             rewrite = {"" = " 🙈 No Windows? ";};
