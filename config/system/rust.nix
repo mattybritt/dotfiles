@@ -6,5 +6,6 @@
     cargo-generate
     cargo-leptos
     leptosfmt
+    rustlings
   ];
 }
