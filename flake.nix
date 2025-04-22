@@ -25,7 +25,7 @@
     ...
   }: let
     system = "x86_64-linux";
-    host = "nixos";
+    host = "lenovoe580";
     inherit (import ./hosts/${host}/options.nix) username hostname;
 
     pkgs = import nixpkgs {
