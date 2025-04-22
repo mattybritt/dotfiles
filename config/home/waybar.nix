@@ -21,7 +21,7 @@ in
 
           modules-center = ["hyprland/workspaces"];
           modules-left = ["custom/startmenu" "hyprland/window" "pulseaudio" "cpu" "memory"];
-          modules-right = ["custom/exit" "idle_inhibitor" "custom/notification" "clock" "tray" "battery"];
+          modules-right = ["custom/exit" "idle_inhibitor" "custom/notification" "clock" "battery" "tray"];
 
           "hyprland/workspaces" = {
             format = "{icon}";
