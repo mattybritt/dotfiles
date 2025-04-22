@@ -39,6 +39,7 @@ in {
     zathura
     gammastep
     firefox
+    qutebrowser
     nerd-fonts.jetbrains-mono
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})
