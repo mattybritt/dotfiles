@@ -40,6 +40,7 @@ in {
     gammastep
     firefox
     qutebrowser
+    lynx
     nerd-fonts.jetbrains-mono
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})
