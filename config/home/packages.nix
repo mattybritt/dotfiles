@@ -63,6 +63,8 @@ in {
     (import ./../scripts/web-search.nix {inherit pkgs;})
     (import ./../scripts/rofi-launcher.nix {inherit pkgs;})
     (import ./../scripts/screenshootin.nix {inherit pkgs;})
+    (import ./../scripts/duck.nix {inherit pkgs;})
+    (import ./../scripts/google.nix {inherit pkgs;})
   ];
 
   programs.gh.enable = true;

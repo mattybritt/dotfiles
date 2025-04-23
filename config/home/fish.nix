@@ -55,6 +55,9 @@
         alias flake-update="nh os switch --hostname nixos --update";
         alias gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
 
+        alias ?=duck
+        alias ??=google
+
         eval "$(zoxide init fish --cmd cd)"
       '';
 
