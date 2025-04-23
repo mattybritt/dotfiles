@@ -16,4 +16,8 @@
     source = ./files/wlogout;
     recursive = true;
   };
+  home.file.".config/lynx" = {
+    source = ./files/lynx;
+    recursive = true;
+  };
 }
