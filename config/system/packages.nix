@@ -28,8 +28,8 @@
     dotnet-sdk_8
     eza
     eza
-    fzf
     flyctl
+    fzf
     gcc
     git
     gitui
@@ -47,6 +47,7 @@
     lshw
     material-icons
     meson
+    mods
     neofetch
     networkmanagerapplet
     nh
