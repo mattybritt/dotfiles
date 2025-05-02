@@ -16,32 +16,30 @@ in {
   # Install Packages For The User
   home.packages = with pkgs; [
     pkgs."${browser}"
-    slack
-    libvirt
-    swww
-    grim
-    slurp
-    file-roller
-    swaynotificationcenter
-    rofi-wayland
-    imv
-    mpv
     audacity
-    pavucontrol
-    tree
-    protonup-qt
+    azuredatastudio
+    file-roller
+    firefox
     font-awesome
+    gammastep
+    grim
+    imv
+    libvirt
+    lynx
+    mpv
+    pavucontrol
+    protonup-qt
+    qutebrowser
+    rofi-wayland
+    slurp
     spotify
     swayidle
-    azuredatastudio
-    speedtest-cli
+    swaynotificationcenter
+    swww
     tmuxifier
-    zathura
-    gammastep
-    firefox
-    qutebrowser
-    lynx
+    tree
     w3m
+    zathura
     nerd-fonts.jetbrains-mono
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})

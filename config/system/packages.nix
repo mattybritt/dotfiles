@@ -16,17 +16,11 @@
   # List System Programs
   environment.systemPackages = with pkgs; [
     alejandra
-    appimage-run
     bash
     bat
     brightnessctl
     btop
-    cmatrix
-    codespell # potentially remove?
-    cowsay
     curl
-    dotnet-sdk_8
-    eza
     eza
     flyctl
     fzf
@@ -36,14 +30,12 @@
     glow
     gnumake
     htop
-    hugo
     inotify-tools
     jq
     just
     libnotify
     libvirt
     lm_sensors
-    lolcat
     lshw
     material-icons
     meson
@@ -79,7 +71,6 @@
     wl-clipboard
     yad
     ydotool
-    zed-editor
     zoxide
   ];
 
