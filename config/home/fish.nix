@@ -58,6 +58,9 @@
         alias ?=duck
         alias ??=google
 
+        alias ai=mods
+        alias aic="mods -C"
+
         eval "$(zoxide init fish --cmd cd)"
       '';
 
