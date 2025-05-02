@@ -25,7 +25,6 @@ in {
     grim
     imv
     libvirt
-    lynx
     mpv
     pavucontrol
     protonup-qt

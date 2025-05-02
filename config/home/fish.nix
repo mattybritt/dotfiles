@@ -13,8 +13,6 @@
         export PATH="/home/matt/.scripts:$PATH"
         export TERMCMD="kitty --single-instance"
         export DIRENV_LOG_FORMAT=""
-        export LYNX_CFG="/home/matt/.config/lynx/lynx.cfg"
-        export LYNX_LSS="/home/matt/.config/lynx/lynx.lss"
 
         export GPG_TTY=(tty)
 
