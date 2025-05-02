@@ -41,6 +41,7 @@ in {
     firefox
     qutebrowser
     lynx
+    w3m
     nerd-fonts.jetbrains-mono
     # Import Scripts
     (import ./../scripts/emopicker9000.nix {inherit pkgs;})
