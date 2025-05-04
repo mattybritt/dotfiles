@@ -39,7 +39,6 @@
     nh
     ninja
     noto-fonts-color-emoji
-    openssl
     pkg-config
     playerctl
     polkit_gnome
