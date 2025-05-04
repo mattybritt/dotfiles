@@ -72,6 +72,7 @@
     yad
     ydotool
     zoxide
+    # (callPackage ./../pkgs/bkmr.nix {})
   ];
 
   programs = {
