@@ -6,13 +6,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "dotnet-core-combined"
-    "dotnet-sdk-6.0.428" # not sure whats causing this dependency
-    "dotnet-sdk-wrapped-6.0.428"
-    "dotnet-sdk-7.0.410"
-  ];
-
   # List System Programs
   environment.systemPackages = with pkgs; [
     alejandra
