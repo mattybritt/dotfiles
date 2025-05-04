@@ -8,6 +8,7 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
+    # (callPackage ./../pkgs/bkmr.nix {})
     alejandra
     bash
     bat
@@ -38,6 +39,7 @@
     nh
     ninja
     noto-fonts-color-emoji
+    openssl
     pkg-config
     playerctl
     polkit_gnome
@@ -65,7 +67,6 @@
     yad
     ydotool
     zoxide
-    # (callPackage ./../pkgs/bkmr.nix {})
   ];
 
   programs = {
