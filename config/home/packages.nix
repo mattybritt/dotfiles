@@ -18,6 +18,7 @@ in {
     pkgs."${browser}"
     audacity
     azuredatastudio
+    bitwarden-cli
     file-roller
     firefox
     font-awesome
