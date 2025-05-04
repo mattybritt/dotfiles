@@ -8,7 +8,7 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    # (callPackage ./../pkgs/bkmr.nix {})
+    (callPackage ./../pkgs/bkmr.nix {})
     alejandra
     bash
     bat

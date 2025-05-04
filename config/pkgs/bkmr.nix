@@ -15,9 +15,10 @@ stdenvNoCC.mkDerivation rec {
     sha256 = "sha256-FHrwPiL8XVwfNJIRH3p2BqlSwMHQv8hJaz1l4MzUY+w=";
   };
 
-  buildInputs = [ pkgs.rustc pkgs.cargo ];
+  buildInputs = [pkgs.openssl pkgs.pkg-config pkgs.rustc pkgs.cargo ];
 
   installPhase = ''
-    cargo install --path ./bkmr --root $out
+    # cargo install --path ./bkmr --root $out
+    make build
   '';
 }
