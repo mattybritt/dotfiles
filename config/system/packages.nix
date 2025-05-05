@@ -33,6 +33,7 @@
     material-icons
     meson
     mods
+    nb
     neofetch
     networkmanagerapplet
     nh
