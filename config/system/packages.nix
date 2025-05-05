@@ -55,6 +55,7 @@
     swtpm
     symbola
     toybox
+    trashy
     unrar
     unzip
     v4l-utils
