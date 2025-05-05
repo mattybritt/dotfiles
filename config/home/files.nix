@@ -6,6 +6,7 @@
   home.file.".config/starship.toml".source = ./files/starship.toml;
   home.file.".config/gammastep/config.ini".source = ./files/gammastep/config.ini;
   home.file.".ssh/config".source = ./files/ssh/config;
+  home.file.".w3m/keymap".source = ./files/w3m/keymap;
   home.file.".scripts" = {
     source = ./files/scripts;
     recursive = true;
