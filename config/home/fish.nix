@@ -46,12 +46,12 @@
       vi = "vim";
       vim = "nvim";
       g = "git";
-      lsa = "exa -la";
-      ls = "exa --color=auto";
-      la = "exa -a";
-      ll = "exa -alFh";
-      l = "exa";
-      listdir = "exa -d */ > list";
+      lsa = "eza -la";
+      ls = "eza --color=auto";
+      la = "eza -a";
+      ll = "eza -alFh";
+      l = "eza";
+      listdir = "eza -d */ > list";
       pdw = "pwd";
       ssn = "sudo shutdown now";
       sr = "reboot";
