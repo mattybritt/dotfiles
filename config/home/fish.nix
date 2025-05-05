@@ -67,6 +67,7 @@
       mv = "mv -i";
       cp = "cp -ia";
       rg = "rg --max-columns=2000 --smart-case";
+      cat = "bat";
     };
 
     shellAbbrs = {
@@ -122,22 +123,10 @@
       nfu = "nix flake update";
       npr = "nixpkgs-review pr --run fish --print-result";
       nd = "nix develop --command fish";
-      nb = "nix build";
       ns = "nix shell";
       nr = "nix run";
       ncg = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
       nvd = "nvd --color always diff /run/current-system result | less -R";
-
-      b = "bun";
-      br = "bun run";
-      bt = "bun test";
-      bi = "bun init";
-      bc = "bun create";
-      bin = "bun install";
-      ba = "bun add";
-      brm = "bun remove";
-      bu = "bun update";
-      bb = "bun build";
 
       ci = "cargo init";
       cin = "cargo info";
@@ -156,12 +145,6 @@
       crmd = "cargo remove --dev";
       cc = "cargo clippy";
       cf = "cargo fmt";
-
-      dc = "deno compile";
-      dr = "deno run";
-      di = "deno install";
-      dt = "deno task";
-      dT = "deno test --watch";
 
       dl = "yt-dlp";
       vol = "wpctl set-volume '@DEFAULT_AUDIO_SINK@'";
