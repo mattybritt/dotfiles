@@ -32,42 +32,37 @@
           alias ssh="kitty +kitten ssh"
         end
 
-        alias v=vi
-        alias vi=vim
-        alias vim=nvim
-        alias g=git
-        alias ..="cd .."
-        alias lsa="exa -la"
-        alias ls='exa'
-        alias ls='exa --color=auto'
-        alias la='exa -a'
-        alias ll='exa -alFh'
-        alias l='exa'
-        alias l.="exa -A | egrep '^\.'"
-        alias listdir="exa -d */ > list"
-        alias cd..='cd ..'
-        alias pdw='pwd'
-        alias ssn="sudo shutdown now"
-        alias sr="reboot"
-        alias flake-rebuild="nh os switch --hostname nixos";
-        alias flake-update="nh os switch --hostname nixos --update";
-        alias gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
-
-        alias ?=duck
-        alias ??=google
-
-        alias ai=mods
-        alias aic="mods -C"
-
         eval "$(zoxide init fish --cmd cd)"
       '';
 
     shellAliases = {
       tree = "eza --all --long --tree";
       mv = "mv -i";
+      rm = "rm -i";
       cp = "cp -ia";
       rg = "rg --max-columns=2000 --smart-case";
       cat = "bat";
+      v = "vi";
+      vi = "vim";
+      vim = "nvim";
+      g = "git";
+      lsa = "exa -la";
+      ls = "exa --color=auto";
+      la = "exa -a";
+      ll = "exa -alFh";
+      l = "exa";
+      listdir = "exa -d */ > list";
+      pdw = "pwd";
+      ssn = "sudo shutdown now";
+      sr = "reboot";
+      flake-rebuild = "nh os switch --hostname nixos";
+      flake-update = "nh os switch --hostname nixos --update";
+      gcCleanup = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
+      ai = "mods";
+      aic = "mods -C";
+      "?" = "duck";
+      "??" = "google";
+      ".." = "cd ..";
     };
 
     shellAbbrs = {
