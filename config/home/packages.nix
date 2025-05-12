@@ -27,6 +27,7 @@ in {
     imv
     libvirt
     mpv
+    obsidian
     pavucontrol
     protonup-qt
     qutebrowser
