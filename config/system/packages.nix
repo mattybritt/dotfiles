@@ -23,6 +23,7 @@
     glow
     gnumake
     htop
+    hugo
     inotify-tools
     jq
     just
