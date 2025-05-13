@@ -22,7 +22,6 @@
         lua_ls = {enable = true;};
         marksman = {enable = true;};
         nixd = {enable = true;};
-        omnisharp = {enable = true;};
         templ = {enable = true;};
         ts_ls = {enable = false;};
         yamlls = {enable = true;};
