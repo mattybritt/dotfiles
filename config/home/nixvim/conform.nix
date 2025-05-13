@@ -5,24 +5,21 @@
   # intervention. By leveraging  conform.vim , developers can maintain consistent
   # code style throughout their projects more efficiently.
 
+  # yaml = ["prettierd"]; prettier was was messing up formatting of some files so was removed
+
   programs.nixvim.plugins.conform-nvim = {
     enable = true;
     settings = {
       formatters_by_ft = {
         "*" = ["codespell"];
         "_" = ["trim_whitespace"];
-        css = ["prettierd"];
         go = ["goimports" "golines" "gofmt" "gofumpt"];
-        javascript = ["prettierd"];
         json = ["jq"];
         lua = ["stylua"];
         nix = ["alejandra"];
         python = ["isort" "black"];
         rust = ["rustfmt"];
-        scss = ["prettierd"];
         sh = ["shfmt"];
-        typescript = ["prettierd"];
-        yaml = ["prettierd"];
       };
     };
   };
