@@ -42,9 +42,6 @@
       cp = "cp -ia";
       rg = "rg --max-columns=2000 --smart-case";
       cat = "bat";
-      v = "vi";
-      vi = "vim";
-      vim = "nvim";
       g = "git";
       lsa = "eza -la";
       ls = "eza --color=auto";

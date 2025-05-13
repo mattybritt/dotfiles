@@ -39,6 +39,7 @@ in {
     swww
     tmuxifier
     tree
+    vim
     w3m
     zathura
     nerd-fonts.jetbrains-mono
