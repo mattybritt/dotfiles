@@ -8,7 +8,6 @@
     ./lsp.nix
     ./nvim-cmp.nix
     ./nvim-tree.nix
-    ./prettier.nix
     ./telescope.nix
     ./treesitter.nix
     ./trouble.nix
