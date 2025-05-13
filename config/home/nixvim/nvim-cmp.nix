@@ -1,4 +1,11 @@
 {pkgs, ...}: {
+  # The cmp-vim plugin is a completion source plugin for Neovim that provides
+  # completion for the built-in Vim. It is part of the nvim-cmp ecosystem, which is
+  # a
+  # popular autocompletion framework for Neovim. nvim-cmp is designed to be a highly
+  # performant and highly customizable autocompletion engine, and it supports many
+  # different sources of completion.
+
   programs.nixvim = {
     plugins = {
       cmp = {

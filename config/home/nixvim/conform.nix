@@ -1,4 +1,10 @@
 {...}: {
+  # The  conform.vim  plugin is a minimalist Vim/Neovim plugin designed to automate
+  # code formatting. It provides integration with various code formatters to ensure
+  # that your code adheres to predefined style guidelines without requiring manual
+  # intervention. By leveraging  conform.vim , developers can maintain consistent
+  # code style throughout their projects more efficiently.
+
   programs.nixvim.plugins.conform-nvim = {
     enable = true;
     settings = {
