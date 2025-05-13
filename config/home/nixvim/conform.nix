@@ -12,7 +12,6 @@
         "*" = ["codespell"];
         "_" = ["trim_whitespace"];
         css = ["prettierd"];
-        elixir = ["mix"];
         go = ["goimports" "golines" "gofmt" "gofumpt"];
         javascript = ["prettierd"];
         json = ["jq"];
