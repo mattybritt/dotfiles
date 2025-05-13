@@ -23,10 +23,6 @@
         marksman = {enable = true;};
         nixd = {enable = true;};
         omnisharp = {enable = true;};
-        tailwindcss = {
-          enable = true;
-          filetypes = ["html" "elixir" "eelixir" "heex"];
-        };
         templ = {enable = true;};
         ts_ls = {enable = false;};
         yamlls = {enable = true;};
