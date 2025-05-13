@@ -20,6 +20,7 @@
     gcc
     git
     gitui
+    gimp
     glow
     gnumake
     htop
