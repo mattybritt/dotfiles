@@ -99,7 +99,7 @@
         vim.filetype.add({ extension = { templ = "templ" } })
       '';
 
-      extraPlugins = [pkgs.vimPlugins.Ionide-vim];
+      extraPlugins = [];
     };
   };
 }
