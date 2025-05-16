@@ -28,6 +28,7 @@
     inotify-tools
     jq
     just
+    k3s
     libnotify
     libvirt
     lm_sensors
