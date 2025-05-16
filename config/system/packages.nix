@@ -13,6 +13,7 @@
     bat
     brightnessctl
     btop
+    docker
     curl
     eza
     flyctl

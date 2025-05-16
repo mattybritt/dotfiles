@@ -5,6 +5,7 @@
     ./autorun.nix
     ./boot.nix
     ./displaymanager.nix
+    ./docker.nix
     ./gammastep.nix
     ./go.nix
     ./hwclock.nix
