@@ -50,6 +50,7 @@
         nvim-autopairs.enable = true; #bracket pairing
         colorizer.enable = true; #hex colours
         web-devicons.enable = true;
+        render-markdown.enable = true;
         rustaceanvim = {
           enable = true;
           settings = {
