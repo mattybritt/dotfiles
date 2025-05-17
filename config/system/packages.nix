@@ -38,7 +38,7 @@
     meson
     mods
     nb
-    neofetch
+    fastfetch
     networkmanagerapplet
     nh
     ninja
