@@ -29,6 +29,7 @@
     inotify-tools
     jq
     just
+    kubectl
     libnotify
     libvirt
     lm_sensors
